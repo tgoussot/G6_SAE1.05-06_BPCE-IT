@@ -1,106 +1,8 @@
-.img_global img {
-  max-width: 100%;
-  height: auto;
-}
 
-.parent1{
-	background-color: black;
-	width: auto;
-	height: 300px;
-	position: relative;
-	top: 20px;
-}
-
-.parent1_gauche{
-	background-color: white;
-	max-width: 50%;
-	height: 270px;
-	position: relative;
-	top: 20px;	
-	left: 20px;
-
-}
-
-.parent1_droite{
-	background-color: blueviolet;
-
-	position: absolute;
-	margin-left:auto;
-	margin-right:0;
-
-}
-
-nav{
-  background-color: #d6c7dd;
-}
-
-nav:before{
-    visibility: hidden;  
-    transform: scaleX(0);  
-    transition: all 0.3s ease-in-out;
-}
-
-
-.navbar-nav{
-  justify-content: flex-end;
-}
-
-
-.navbar-brand{
-  color: white;
-  margin-left: 10px;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.navbar-brand:hover{
-  color: white;
-}
-
-.nav-link{
-  color: white;
-  margin: 5px;
-  text-decoration-color: white;
-  transition-property: white;
-}
-
-
-.nav-link:hover{
-  color: red;
-}
-
-.navbar-toggler-icon{
-  background-image: url(https://cdn-icons-png.flaticon.com/512/5458/5458378.png);
-}
-
-.navbar-toggler:focus{
-  box-shadow: none;
-}
-
-
-#columngauche{
-  padding-right: 4px ;
-  padding-left: 5px;
-}
-
-
-#columndroite{
-  padding-left: 4px ;
-  padding-right: 10px;
-}
-
-
-a{
-  text-decoration: none;
-}
-
-.sticky-top {
-    transition: all 0.25s ease-in;
-}
 
 
 /* -------------------Slider présentation pages annexes-------------------- */
- /* --------------------------by Peyrous Yonnis----------------------------- */
+ 
 
  * {
   margin: 0;
@@ -158,9 +60,9 @@ a{
 
 /* ------------------------------------------------------------------------ */
 
+/* ---------------------------nav bar-------------------------------------- */
 
 
-/* Style the navbar */
 #navbar {
   overflow: hidden;
   background-color: #333;
@@ -168,7 +70,7 @@ a{
 
 }
 
-/* Navbar links */
+
 #navbar a {
   float: left;
   display: block;
@@ -188,19 +90,19 @@ a{
   color: white;
 }
 
-/* Page content */
+
 .content {
   padding: 16px;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
 .sticky + .content {
   padding-top: 60px;
 }
@@ -219,3 +121,5 @@ a{
   display: block;
  
 }
+
+/* -------------------------------------------------------------- */
