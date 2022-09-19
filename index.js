@@ -29,6 +29,6 @@ setInterval(function() {                // passage auto à l'image suivante
     }
     enleverActiveImages();
     img_slider[etape].classList.add('active');
-}, 8000)
+}, 2000)
 
 // ------------------------------------------------------------------------
