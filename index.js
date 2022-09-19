@@ -1,21 +1,5 @@
-//--------------------------- nav bar-----------------------------------------
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-
 // -------------------Slider présentation pages annexes--------------------
-
+// --------------------------by Peyrous Yonnis-----------------------------
 
 let img_slider = document.getElementsByClassName('img_slider'); 
 
