@@ -97,3 +97,63 @@ a{
 .sticky-top {
     transition: all 0.25s ease-in;
 }
+
+
+/* -------------------Slider présentation pages annexes-------------------- */
+ /* --------------------------by Peyrous Yonnis----------------------------- */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  z-index: 1;
+  height: 80vh;
+  position: relative;
+}
+
+.slider img {
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+.bandeau_slider{
+  position: relative;
+
+  /* max-height: 400px; */
+
+}
+
+#transparent01 {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.texte_slider{
+  position: absolute;
+  z-index: 3;
+  margin-left: 55%;
+  font-size: 350%;
+  color: #ffffff;
+
+}
+
+
+
+/* ------------------------------------------------------------------------ */
