@@ -50,7 +50,7 @@ nav:before{
   color: white;
   margin-left: 10px;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: underline 3px !important ;
 }
 
 .navbar-brand:hover{
@@ -58,10 +58,11 @@ nav:before{
 }
 
 .nav-link{
-  color: white;
+  color: white !important;
   margin: 5px;
   text-decoration-color: white;
   transition-property: white;
+
 }
 
 
@@ -111,7 +112,8 @@ a{
 .slider {
   z-index: 1;
   height: 80vh;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .slider img {
@@ -132,9 +134,8 @@ a{
 
 .bandeau_slider{
   position: relative;
-
-  
-
+  margin: 0;
+  padding: 0;
 }
 
 #transparent01 {
@@ -145,28 +146,24 @@ a{
   z-index: 2;
 }
 
-.texte_slider{
+.slider .texte_slider{
   position: absolute;
+  padding:  25px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 3;
-  margin-left: 55%;
-  font-size: 350%;
-  color: #ffffff;
-
+  max-width: 750px;
+  width: 40%;
+  min-width: 300px;
+  color: #fff;
+}
+.slider .texte_slider h5 {
+  font-size: 35px;
 }
 
 
 
 /* ------------------------------------------------------------------------ */
-
-
-
-/* Style the navbar */
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-  z-index: 6;
-
-}
 
 
 
@@ -200,4 +197,27 @@ a{
   max-height: 100%;
   display: block;
  
+}
+
+@media screen and (max-width: 1250px) {
+  .slider .texte_slider{
+  position: absolute;
+  display:  block;
+  padding:  25px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  max-width: none;
+  width: auto;
+  min-width: none;
+  color: #fff;
+  }
+  .slider .texte_slider h5 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+.nav-link-color{
+  color: white;
 }
