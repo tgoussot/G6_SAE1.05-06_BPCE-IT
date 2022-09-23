@@ -1,14 +1,16 @@
 # SAÉ S1. 05-06
 
 *******
-## Table of contents
+## Table des matières 
 * [Présentation Général](#presentation)
 * [Lancer le projet](#lancer)
 *******
+
 <div id='presentation'/> 
 
 ## Presentation Général
-This project is simple Lorem ipsum dolor generator.
+
+Le site que nous developpons à pour objectif de présenter l'entreprise BPCE-IT (Banque Populaire Caisse Epargne Infogérence et Technologie) dans le cadre d'un SAE (Situation d'Apprentissage et d'Evaluation) durant notre première année de BUT Informatique à l'IUT de Belfort. 
 
 
 <div id='lancer'/> 
