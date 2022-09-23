@@ -1,7 +1,7 @@
 # SAÉ S1. 05-06
 
 *******
-# Table des matières 
+## Table des matières 
 * [Présentation Général](#presentation)
 * [Lancer le projet](#lancer)
 *******
