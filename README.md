@@ -4,6 +4,7 @@
 ## Table des matières 
 * [Présentation Général](#presentation)
 * [Lancer le projet](#lancer)
+* [Crédit](#credit)
 *******
 
 <div id='presentation'/> 
@@ -17,3 +18,13 @@ Le site que nous developpons à pour objectif de présenter l'entreprise BPCE-IT
 
 ## Lancer le projet
 To run this project, install it locally using npm:
+
+<div id='credit'/>
+
+## Crédit 
+
+Ce projet sera mené à bien grâce à : 
+* Rémi FREYMONT
+* Alexandre GARNIER
+* Yonnis PEYROUS
+* Théo GOUSSOT
