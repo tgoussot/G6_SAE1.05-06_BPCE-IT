@@ -1,7 +1,7 @@
 # SAÉ S1. 05-06
 ## Table of contents
-* Présentation Général(#presentation-general)
-* Lancer le projet (#lancer-le-projet)
+* Présentation Général(#Presentation-general)
+* Lancer le projet (#Lancer-le-projet)
 
 ## Presentation Général
 This project is simple Lorem ipsum dolor generator.
