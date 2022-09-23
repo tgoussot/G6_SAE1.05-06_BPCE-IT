@@ -11,7 +11,7 @@
 
 ## Presentation Général
 
-Le site que nous developpons à pour objectif de présenter l'entreprise BPCE-IT (Banque Populaire Caisse Epargne Infogérence et Technologie) dans le cadre d'un SAE (Situation d'Apprentissage et d'Evaluation) durant notre première année de BUT Informatique à l'IUT de Belfort. 
+Le site que nous développons à pour objectif de présenter l'entreprise BPCE-IT (Banque Populaire Caisse Epargne Infogérence et Technologie) dans le cadre d'un SAE (Situation d'Apprentissage et d'Evaluation) durant notre première année de BUT Informatique à l'IUT de Belfort.
 
 
 <div id='lancer'/> 
