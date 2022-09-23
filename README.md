@@ -1,10 +1,10 @@
 # SAÉ S1. 05-06
 ## Table of contents
-* [General info](#general-info)
+* [General info](#presentation-general)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-## General info
+## Presentation Général
 This project is simple Lorem ipsum dolor generator.
 	
 ## Technologies
