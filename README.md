@@ -17,7 +17,7 @@ Le site que nous développons à pour objectif de présenter l'entreprise BPCE-I
 <div id='lancer'/> 
 
 ## Lancer le projet
-To run this project, install it locally using npm:
+Rendez vous sur ce lien : https://tgoussot.github.io/G6_SAE1.05-06_BPCE-IT/index.html
 
 <div id='credit'/>
 
