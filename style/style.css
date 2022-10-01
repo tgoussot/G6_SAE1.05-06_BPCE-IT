@@ -225,3 +225,15 @@ nav:before{
 }
 
 /* ------------------------------------------------------------------------ */
+
+#currentAccueil{
+  text-decoration: white 3px underline;
+}
+
+#currentAccueil:hover{
+  text-decoration: red 3px underline;
+}
+
+.nav-link:hover{
+  color:red !important;
+}
