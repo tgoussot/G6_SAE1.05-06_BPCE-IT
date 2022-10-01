@@ -223,8 +223,40 @@ nav:before{
  
 }
 
+<<<<<<< Updated upstream
 /* ------------------------------------------------------------------------ */
 
 
 
 
+=======
+@media screen and (max-width: 1250px) {
+  .slider .texte_slider{
+  position: absolute;
+  display:  block;
+  padding:  25px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  max-width: none;
+  width: auto;
+  min-width: none;
+  color: #fff;
+  }
+  .slider .texte_slider h5 button {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+.nav-link-color{
+  color: white;
+}
+
+.carousel-caption {
+  position: relative !important;
+  top:0 !important;
+  right:40px !important;
+
+}
+>>>>>>> Stashed changes
