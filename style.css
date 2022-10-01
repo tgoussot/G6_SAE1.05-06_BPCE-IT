@@ -1,34 +1,11 @@
-.img_global img {
-  max-width: 100%;
-  height: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.parent1{
-	background-color: black;
-	width: auto;
-	height: 300px;
-	position: relative;
-	top: 20px;
-}
 
-.parent1_gauche{
-	background-color: white;
-	max-width: 50%;
-	height: 270px;
-	position: relative;
-	top: 20px;	
-	left: 20px;
-
-}
-
-.parent1_droite{
-	background-color: blueviolet;
-
-	position: absolute;
-	margin-left:auto;
-	margin-right:0;
-
-}
+/* ----------------navbar---------------- */
 
 nav{
   background-color: #d6c7dd;
@@ -79,44 +56,19 @@ nav:before{
 }
 
 
-#columngauche{
-  padding-right: 4px ;
-  padding-left: 5px;
-}
 
+/* -------------------Slider presentation pages annexes-------------------- */
 
-#columndroite{
-  padding-left: 4px ;
-  padding-right: 10px;
-}
-
-
-a{
-  text-decoration: none;
-}
-
-.sticky-top {
-    transition: all 0.25s ease-in;
-}
-
-
-/* -------------------Slider présentation pages annexes-------------------- */
- /* --------------------------by Peyrous Yonnis----------------------------- */
-
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .slider {
   z-index: 1;
   height: 80vh;
   display: flex;
   justify-content: flex-end;
+
 }
 
-.slider img {
+.slider .img_slider {
   object-fit:cover;
   height: 100%;
   width: 100%;
@@ -125,7 +77,6 @@ a{
   left: 0;
   opacity: 0;
   transition: opacity 0.5s;
-
 }
 
 .slider img.active {
@@ -144,49 +95,122 @@ a{
   height: 100%;
   width: 100%;
   z-index: 2;
+  margin-left: -12px;
 }
 
 .slider .texte_slider{
   position: absolute;
-  padding:  25px;
+  padding: 25px 100px 25px 0;
   top: 50%;
   transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
   z-index: 3;
-  max-width: 750px;
+  max-width: 950px;
   width: 40%;
   min-width: 300px;
   color: #fff;
+
 }
 .slider .texte_slider h5 {
+  padding-right: 70px;
   font-size: 35px;
 }
 
+/* button slider */
 
-
-/* ------------------------------------------------------------------------ */
-
-
-
-/* Page content */
-.content {
-  padding: 16px;
+.slider #buttonslide{
+  z-index: 8;
+  height: 20%;
+  margin: 0;
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  transform: translateY(-50%, -50%);
+  
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+#abutton {
+  transition: .2s ease-in;
+}
+#abutton:hover {
+  transform: translateX(-3px) scale(1.2);
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+/* slider responsive */
+
+@media screen and (max-width: 1250px) {
+  .slider .texte_slider{
+    position: absolute;
+    top: 50%;
+    padding:  25px;
+    transform: translateY(-50%);
+    z-index: 3;
+    max-width: none;
+    width: auto;
+    min-width: none;
+    height: 300px;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .slider .texte_slider h5 {
+    padding-bottom: 300px;
+    font-size: 25px;
+    text-align: center;
+    padding-right: 0;
+  }
+  .slider .texte_slider #abutton i {
+    margin-top: 50px;
+  }
+  .slider .texte_slider #abutton:hover {
+    transform: none;
+  }
 }
+
+@media screen and (max-width: 700px) {
+
+
+  .slider .texte_slider{
+    position: absolute;
+    top: 40%;
+    padding:  25px;
+    transform: translateY(-50%, -50%);
+
+    z-index: 3;
+    max-width: none;
+    width: auto;
+    min-width: none;
+    height: 300px;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .slider .texte_slider h5 {
+    padding-bottom: 300px;
+    font-size: 25px;
+    text-align: center;
+    padding-right: 0;
+  }
+  .slider .texte_slider #abutton i {
+    margin-top: 200px;
+  }
+  .slider .texte_slider #abutton:hover {
+    transform: none;
+  }
+}
+
+
+/* -------------------------image top navbar-------------------------------- */
 
 .header {
   background-color: #f1f1f1;
-
   text-align: center;
   margin: 0;
   padding: 0;
@@ -199,25 +223,8 @@ a{
  
 }
 
-@media screen and (max-width: 1250px) {
-  .slider .texte_slider{
-  position: absolute;
-  display:  block;
-  padding:  25px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  max-width: none;
-  width: auto;
-  min-width: none;
-  color: #fff;
-  }
-  .slider .texte_slider h5 {
-    font-size: 40px;
-    text-align: center;
-  }
-}
+/* ------------------------------------------------------------------------ */
 
-.nav-link-color{
-  color: white;
-}
+
+
+

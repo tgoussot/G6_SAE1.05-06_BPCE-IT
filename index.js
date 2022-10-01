@@ -1,13 +1,12 @@
-// -------------------Slider présentation pages annexes--------------------
-// --------------------------by Peyrous Yonnis-----------------------------
+// -------------------Slider presentation pages annexes--------------------
 
-let img_slider = document.getElementsByClassName('img_slider'); 
+let img_slider = document.getElementsByClassName('img_slider');     // revoi tab de tous les "img_slider"
 
 let etape = 0;
 
 let nbr_img = img_slider.length;
 
-function enleverActiveImages() {        // met les images que l'on ne veut pas visible avec une opacité de 0 (CSS)
+function enleverActiveImages() {        // met les images que l'on ne veut pas visible avec une opacite de 0 (CSS)
     for(let i = 0 ; i < nbr_img ; i++) {
         img_slider[i].classList.remove('active');
     }
