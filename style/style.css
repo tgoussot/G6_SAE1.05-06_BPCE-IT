@@ -180,7 +180,6 @@ nav:before{
     color: #fff;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
   }
   
   .slider .texte_slider h5 {
@@ -212,7 +211,6 @@ nav:before{
     color: #fff;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
   }
   .slider .texte_slider h5 {
     padding-bottom: 300px;
