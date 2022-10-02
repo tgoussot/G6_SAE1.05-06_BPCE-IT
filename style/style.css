@@ -169,10 +169,10 @@ nav:before{
     padding:  25px;
     z-index: 3;
 
-    max-width: 80%;
+    /* max-width: 80%; */
     
 
-    width: auto;
+    width: 95%;
     height: 300px;
     
     color: #fff;
