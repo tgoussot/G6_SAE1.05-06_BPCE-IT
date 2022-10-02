@@ -38,19 +38,11 @@ setInterval(function() {                // passage auto à l'image suivante
 // console.log(screen.width)
 // console.log(screen.height)
 
-// largeur = screen.width;
-// hauteur = screen.height;
+largeur = window.innerWidth;
+hauteur = window.innerHeight;
 
-// ratio = largeur/hauteur;
+ratio = largeur/hauteur;
 
-// if (ratio > 1.7){
-//     console.log("ratio > 16/9");
-//     window.scroll(0,100);
-// }
-
-// else{
-//     console.log("ratio < 16/9");
-// }
-
-
-window.scroll(0,100);
+if (ratio > 1.7){
+    window.scroll(0,100);
+}
