@@ -23,3 +23,17 @@ setInterval(function() {                // passage auto à l'image suivante
 
 // ------------------------------------------------------------------------
 
+// onscroll listener for the navbar 
+// window.onscroll = function() {scrollFunction()};
+// function scrollFunction(){
+//     console.log(window.scrollY);
+// }
+
+// window.scrollY=1000;
+
+// //oneload listener for the navbar
+
+window.scroll(0,100);
+
+
+
