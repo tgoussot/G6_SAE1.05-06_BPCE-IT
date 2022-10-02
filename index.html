@@ -3,7 +3,7 @@ bootstrap & navbar by Theo Goussot
 slider & design by Yonnis Peyrous -->
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@ slider & design by Yonnis Peyrous -->
 
   <!-- link ajax (button) -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- link bootstrap -->
 
@@ -23,19 +23,18 @@ slider & design by Yonnis Peyrous -->
 </head>
 <body>
 
-  <!-- image top navbar -->
+                <!-- image top navbar -->
 
   <div class="header"> 
 
     <figure class="figure">
       <video loop muted autoplay preload="auto" id="upnavbar" >
-        <source type="video/mp4" src="video/video-top-navbar.mp4" onload="window.scrollY=1000" id="video01"></source>
+        <source type="video/mp4" src="video/video-top-navbar.mp4" onload="window.scrollY=1000" id="video01">
     </video>
     </figure>
   </div>
   
-  <!-- -----------------------------NavBar------------------------------------- -->
-
+                <!-- NAVBAR -->
   <nav class="navbar sticky-top navbar-expand-lg">
     <a class="navbar-brand" href="#">Dynos'Analyse</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,28 +60,30 @@ slider & design by Yonnis Peyrous -->
       </ul>
     </div>
   </nav>
+                <!-- FIN NAVBAR -->
 
-<!-- -------------------Slider présentation pages annexes-------------------- -->
-<div class="bandeau_slider container-fluid" id="slider">
-        
-  <img src="image/transparentViolet02.png" id="transparent01" class="img_trans">
-  
-  <div class="slider">
-      <img src="image/img1.jpg" alt="img1" class="img_slider active" />
-      <img src="image/img3.jpg" alt="img3" class="img_slider" />
 
-      <div class="texte_slider">
-        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et officia fugit iusto quae cumque minus maxime. Illo vel corporis sequi atque, possimus odit pariatur maxime reiciendis ex aspernatur soluta enim!S</h5>
-        <a href="https://google.fr" id="abutton">
-          <i class="fa-solid fa-circle-chevron-right fa-2xl" id="buttonslide" ></i>
-        </a>
-      </div>
-      
+                <!-- Slider présentation pages annexes -->
+  <div class="bandeau_slider container-fluid" id="slider" style="margin-bottom:200px;">
+          
+    <img src="image/transparentViolet02.png" id="transparent01" class="img_trans" alt="fond tranparent violet">
+    
+    <div class="slider">
+        <img src="image/img1.jpg" class="img_slider active" alt= "arbre avec un coucher soleil" >
+        <img src="image/img3.jpg" class="img_slider" alt= "personne tenant un nuage un peu informatique">
+        <div class="texte_slider">
+          <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et officia fugit iusto quae cumque minus maxime. Illo vel corporis sequi atque, possimus odit pariatur maxime reiciendis ex aspernatur soluta enim!S</h5>
+          <a href="https://google.fr" id="abutton">
+            <i class="fa-solid fa-circle-chevron-right fa-2xl" id="buttonslide" ></i>
+          </a>
+        </div>        
     </div>
-</div>
+  </div>
+                <!-- FIN Slider présentation pages annexes -->
+
 <script src="js/index.js"></script>
-</div>
-<!-- ------------------------------------------------------------------------ -->
+
+
 
 </body>
 </html>
