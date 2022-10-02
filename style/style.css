@@ -173,14 +173,14 @@ nav:before{
     
 
     width: 95%;
-    height: 300px;
-    
+    height: auto;
     color: #fff;
     flex-direction: column;
     align-items: center;
   }
   
   .slider .texte_slider h5 {
+    margin-top: 250px;
     padding-bottom: 300px;
     font-size: 25px;
     text-align: center;
@@ -188,13 +188,14 @@ nav:before{
   }
   .slider .texte_slider #abutton i {
     margin-top: 50px;
+    transform: translateX(-70%);
   }
   .slider .texte_slider #abutton:hover {
     transform: none;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .slider .texte_slider{
     top: 40%;
   }
