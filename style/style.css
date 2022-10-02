@@ -164,6 +164,10 @@ nav:before{
 /* slider responsive */
 
 @media screen and (max-width: 1250px) {
+  #slider{
+    max-height: 450px;
+  }
+
   .slider .texte_slider{
     top: 50%;
     padding:  25px;
