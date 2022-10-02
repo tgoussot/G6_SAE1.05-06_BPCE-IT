@@ -169,7 +169,7 @@ nav:before{
     padding:  25px;
     z-index: 3;
 
-    padding-left: 5%;
+    max-width: 80%;
     
 
     width: auto;
