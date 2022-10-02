@@ -6,10 +6,8 @@
 
 /* ----------------img top navbar--------------- */
 
-
-
 video {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   
 }
@@ -24,11 +22,9 @@ video {
 
 .figure {
   margin-bottom: 0;
+  width: 100%;
+  height: auto;  
 }
-
-
-
-
 
 /* ----------------navbar---------------- */
 
