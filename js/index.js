@@ -44,5 +44,5 @@ hauteur = window.innerHeight;
 ratio = largeur/hauteur;
 
 if (ratio > 1.7){
-    window.scroll(0,100);
+    window.scroll(0,95);
 }
