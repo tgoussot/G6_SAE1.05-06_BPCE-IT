@@ -33,7 +33,24 @@ setInterval(function() {                // passage auto à l'image suivante
 
 // //oneload listener for the navbar
 
+
+
+// console.log(screen.width)
+// console.log(screen.height)
+
+// largeur = screen.width;
+// hauteur = screen.height;
+
+// ratio = largeur/hauteur;
+
+// if (ratio > 1.7){
+//     console.log("ratio > 16/9");
+//     window.scroll(0,100);
+// }
+
+// else{
+//     console.log("ratio < 16/9");
+// }
+
+
 window.scroll(0,100);
-
-
-
