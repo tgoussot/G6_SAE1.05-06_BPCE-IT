@@ -29,7 +29,7 @@ video {
 /* ----------------navbar---------------- */
 
 nav{
-  background-color: #d6c7dd;
+  background-color: #9e70a2;
   margin-top: -8px;
 }
 
@@ -63,13 +63,9 @@ nav:before{
   margin: 5px;
   text-decoration-color: white;
   transition-property: white;
-
+  border-radius: 10%;
 }
 
-
-.nav-link:hover{
-  color: red;
-}
 
 .navbar-toggler-icon{
   background-image: url(https://cdn-icons-png.flaticon.com/512/5458/5458378.png);
@@ -79,6 +75,24 @@ nav:before{
   box-shadow: none;
 }
 
+#currentAccueil{
+  text-decoration: white 3px underline;
+}
+
+#currentAccueil:hover{
+  text-decoration: 3px underline;
+}
+
+.nav-link:hover{
+  background-color: #6c4774;
+  transition: .9s;
+}
+
+@media screen and (max-width: 1250px) {
+  .nav-link{
+    max-width: 60px;
+  }
+}
 
 
 /* -------------------Slider presentation pages annexes-------------------- */
@@ -89,7 +103,6 @@ nav:before{
   height: 80vh;
   display: flex;
   justify-content: flex-end;
-  margin-top:200px
 
 }
 
@@ -104,17 +117,65 @@ nav:before{
   transition: opacity 0.5s;
 }
 
+.slider .img_slider02 {
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slider .img_slider03 {
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 .slider img.active {
   opacity: 1;
 }
 
+.slider img.active02 {
+  opacity: 1;
+}
+
+.slider img.active03 {
+  opacity: 1;
+}
+
 .bandeau_slider{
-  position: relative;
+  position: relative; 
   margin: 0;
   padding: 0;
 }
 
 #transparent01 {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  margin-left: -12px;
+}
+
+#transparent02 {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  margin-left: -12px;
+}
+
+#transparent03 {
   position: absolute;
   object-fit: cover;
   height: 100%;
@@ -151,7 +212,26 @@ nav:before{
   color: #ffffff;
   top: 50%;
   transform: translateY(-50%, -50%);
-  
+}
+
+.slider #buttonslide02{
+  z-index: 8;
+  height: 20%;
+  margin: 0;
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  transform: translateY(-50%, -50%);
+}
+
+.slider #buttonslide03{
+  z-index: 8;
+  height: 20%;
+  margin: 0;
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  transform: translateY(-50%, -50%);
 }
 
 #abutton {
@@ -161,10 +241,30 @@ nav:before{
   transform: translateX(-3px) scale(1.2);
 }
 
+#abutton02 {
+  transition: .2s ease-in;
+}
+#abutton02:hover {
+  transform: translateX(-3px) scale(1.2);
+}
+
+#abutton03 {
+  transition: .2s ease-in;
+}
+#abutton03:hover {
+  transform: translateX(-3px) scale(1.2);
+}
+
 /* slider responsive */
 
 @media screen and (max-width: 1250px) {
   #slider{
+    max-height: 450px;
+  }
+  #slider02{
+    max-height: 450px;
+  }
+  #slider03{
     max-height: 450px;
   }
 
@@ -197,6 +297,24 @@ nav:before{
   .slider .texte_slider #abutton:hover {
     transform: none;
   }
+  .slider .texte_slider #abutton02 i {
+    margin-top: 50px;
+    transform: translateX(-70%);
+  }
+  .slider .texte_slider #abutton02:hover {
+    transform: none;
+  }
+  .slider .texte_slider #abutton03 i {
+    margin-top: 50px;
+    transform: translateX(-70%);
+  }
+  .slider .texte_slider #abutton03:hover {
+    transform: none;
+  }
+  .blanc img{
+    height: 150px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -206,18 +324,18 @@ nav:before{
   .slider .texte_slider #abutton i {
     margin-top: 200px;
   }
+  .slider .texte_slider #abutton02 i {
+    margin-top: 200px;
+  }
+  .slider .texte_slider #abutton03 i {
+    margin-top: 200px;
+  }
+
 }
 
 /* ------------------------------------------------------------------------ */
 
-#currentAccueil{
-  text-decoration: white 3px underline;
-}
-
-#currentAccueil:hover{
-  text-decoration: red 3px underline;
-}
-
-.nav-link:hover{
-  color:red !important;
+.blanc img{
+  width: 100%;
+  
 }
