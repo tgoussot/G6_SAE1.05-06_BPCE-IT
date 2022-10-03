@@ -88,7 +88,7 @@ nav:before{
   transition: .9s;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1000px) {
   .nav-link{
     max-width: 60px;
   }
