@@ -1,29 +1,27 @@
-                
-                // Sliders presentations pages annexes
+//===============Slider redirection================ 
 
-
-// var slider 01
+// -------var slider 01---------
 
 let img_slider = document.getElementsByClassName('img_slider');     
 let etape = 0;
 let nbr_img = img_slider.length;
 
 
-// var slider 02
+// --------var slider 02--------
 
 let img_slider02 = document.getElementsByClassName('img_slider02');     
 let etape02 = 0;
 let nbr_img02 = img_slider02.length;
 
 
-// var slider 03
+// --------var slider 03--------
 
 let img_slider03 = document.getElementsByClassName('img_slider03');     
 let etape03 = 0;
 let nbr_img03 = img_slider03.length;
 
 
-// fonctions qui change retire la classe active-02-03
+// --------fonctions qui change retire la classe active-02-03---------
 
 function enleverActiveImages() {        
 
@@ -45,7 +43,7 @@ function enleverActiveImagesTrois() {
     }
 }
 
-// ajout de la classe active-02-03 aux images que l'on veut voir 
+// -----------ajout de la classe active-02-03 aux images que l'on veut voir -----------
 
 setInterval(function() {                
     etape++,etape02++,etape03++;
@@ -70,8 +68,8 @@ setInterval(function() {
     img_slider03[etape03].classList.add('active03');
 }, 2000)
 
-
-// -----------descente automatique de la page lorsque son format est superieur a 16/9-----------------
+//========================reglage spawn page===========================
+//descente automatique de la page lorsque son format est superieur a 16/9
 
 
 largeur = window.innerWidth;
@@ -82,3 +80,5 @@ ratio = largeur/hauteur;
 if (ratio > 1.7){
     window.scroll(0,95);
 }
+
+//==================================================================
