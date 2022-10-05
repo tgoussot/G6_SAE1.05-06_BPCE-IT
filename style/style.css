@@ -155,6 +155,7 @@ nav{                                          /* a toute les barres de navigatio
   width: 100%;                                /* reglage de la largeur a 100% (avec l'atribut cover, l'image ne se deforme pas mais rempli le conteneur a la taille maximum disponible)  */
   z-index: 2;                                 /* positionement sur le plan de rang 2 */
   margin-left: -12px;                         /* reglage de la marge gauche a -12px (resolution bug) */
+  transform: rotate(180deg);                  /* retourne l'image sur l'axe des y */
 }
 
 #transparent03 {                              /* pour l'element d'identifiant transparent03 */
@@ -182,6 +183,22 @@ nav{                                          /* a toute les barres de navigatio
 .slider .texte_slider h5 {                    /* pour tout les h5 dans la classe .texte_slider et .slider */
   padding-right: 70px;                        /* reglage de l'espacement droit entre les blocs a 70px */
   font-size: 35px;                            /* reglage de la taille du texte a 35px */
+  text-align: right;                          /* alignement du texte a droite*/
+}
+
+.inverse {                                    /* pour toute la classe .inverse */
+  justify-content: flex-start;                /* aligne les elements a gauche*/
+}
+
+#h5s2 {                                       /* pour l'element h5s2 */
+  padding-right: 0px;                         /* supression de l'espacement droit */
+  text-align: left;                           /* alignement du texte a gauche*/
+  padding-left: 70px;                         /* reglage de l'espacement gauche a 70px */
+}
+
+#inverse2 {                                    /* pour toute la classe .inverse2 */
+  padding: 25px 0 25px 100px;                  /* reglage de l'espacement */
+  flex-direction: row-reverse;                 /* inversion de l'ordre des enfants du conteneur parent */
 }
 
 /* -------------button slider--------------- */
@@ -216,15 +233,17 @@ nav{                                          /* a toute les barres de navigatio
 #abutton {                                    /* pour l'element d'identifiant abutton */
   transition: .2s ease-in;                    /* les transition dureront 0.2s et auront un demarage lent */
 }
+
 #abutton:hover {                              /* pour l'element d'identifiant abutton quand la souris passe dessus */
   transform: translateX(-3px) scale(1.2);     /* deplace legerement le bouton et augmente sa taille de 20% */
 }
 
 #abutton02 {                                  /* pour l'element d'identifiant abutton02 */
   transition: .2s ease-in;                    /* les transition dureront 0.2s et auront un demarage lent */
+  transform: rotate(180deg);                  /* inverse le bouton sur l'axe y */
 }
 #abutton02:hover {                            /* pour l'element d'identifiant abutton02 quand la souris passe dessus */
-  transform: translateX(-3px) scale(1.2);     /* deplace legerement le bouton et augmente sa taille de 20% */
+  transform: translateX(-3px) scale(1.2) rotate(180deg); /* deplace legerement le bouton et augmente sa taille de 20% */
 }
 
 #abutton03 {                                  /* pour l'element d'identifiant abutton03 */
@@ -275,7 +294,7 @@ nav{                                          /* a toute les barres de navigatio
     transform: translateX(-70%);              /* decalage de l'element de -70% sur l'axe des x */
   }
   .slider .texte_slider #abutton02:hover {    /* pour l'element d'identifiant abutton02 quand la souris passe dessus */
-    transform: none;                          /* supression des transformations */
+    transform: rotate(180deg);                          /* supression des transformations */
   }
   .slider .texte_slider #abutton03 i {        /* pour le i dans l'element d'identifiant abutton03 */
     margin-top: 50px;                         /* reglage de la marge superieur a 50% */
@@ -287,6 +306,16 @@ nav{                                          /* a toute les barres de navigatio
   .blanc img{                                 /* pour les images de la classe .blanc */
     height: 150px;                            /* reglage de la hauteur a 150px */
     object-fit: cover;                        /* reglage de la facon dont les images doivent etre redimentionner */
+  }
+  #h5s2{                                      /* pour l'element h5s2 */
+    text-align: center;                       /* alignement du texte au centre */
+    margin-top: 250px;                        /* reglage de la marge superieur a 250 px */
+    padding-bottom: 300px;                    /* reglage de l'espacement inferieur a 300px */
+    font-size: 25px;                          /* reglage de la taille du texte a 25px */
+    padding-left: 0;                          /* supression de l'espacement gauche */
+  }
+  #inverse2{                                  /* pour l'element inverse2 */
+    padding: 0;                               /* supression des espacement */
   }
 }
 
