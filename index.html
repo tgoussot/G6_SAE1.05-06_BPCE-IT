@@ -1,6 +1,6 @@
 <!-- page accueil 
-bootstrap & navbar by Theo Goussot
-slider & design by Yonnis Peyrous -->
+bootstrap, footer & navbar by Theo Goussot
+slider, contenu & design by Yonnis Peyrous -->
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -29,13 +29,13 @@ slider & design by Yonnis Peyrous -->
 
     <figure class="figure">
       <video loop muted autoplay preload="auto" id="upnavbar" >
-        <source type="video/mp4" src="video/video-top-navbar.mp4" onload="window.scrollY=1000" id="video01">
-    </video>
+        <source type="video/mp4" src="video/video-top-navbar-V2.mp4" onload="window.scrollY=1000" id="video01">
+      </video>
     </figure>
   </div>
   
                 <!-- NAVBAR -->
-  <nav class="navbar sticky-top navbar-expand-lg">
+  <nav class="navbar sticky-top navbar-expand-lg" ">
     <a class="navbar-brand" href="https://github.com/tgoussot/G6_SAE1.05-06_BPCE-IT">Dynos'Analyse</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -43,32 +43,31 @@ slider & design by Yonnis Peyrous -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html" id="currentAccueil">Accueil</a>
+          <a class="nav-link" href="index.html" style="font-weight: bold; text-decoration: white 2px underline;">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="page1.html">Page 1</a>
+          <a class="nav-link" href="page1.html">Qui sont-ils?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="page2.html">Page 2</a>
+          <a class="nav-link" href="page2.html">Quels Enjeux?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="page3.html">Page 3</a>
+          <a class="nav-link" href="page3.html">Projets Majeurs</a>
         </li>
       </ul>
     </div>
   </nav>
                 <!-- FIN NAVBAR -->
+  <div style="border-bottom-width: 3px; border-bottom-style: solid;"></div>
 
-
-                <!-- Slider présentation pages annexes -->
-
+                <!-- Slider presentation pages annexes -->
+<!-- <div class="background"> -->
   <!-- slider 01 -->
-  
-  <div class="blanc" style="height: 500px">
-    <img src="https://i2.wp.com/www.lgeek.info/wp-content/uploads/2011/07/nyancat21.gif?zoom=2.625&fit=400%2C400" alt="blanc01" style="height: 500px;">
+   <div class="blanc">
+    <img src="image/etoilep1.png" alt="blanc01">
   </div>
-  
-  <div class="bandeau_slider container-fluid" id="slider" >
+
+  <div class="bandeau_slider container-fluid" id="slider" style="border-top-width: 3px; border-top-style: solid; border-bottom-width: 3px;border-bottom-style: solid;">
           
     <img src="image/transparentViolet02.png" id="transparent01" class="img_trans" alt="fond tranparent violet">
     
@@ -76,31 +75,32 @@ slider & design by Yonnis Peyrous -->
         <img src="image/img1.jpg" class="img_slider active" alt= "arbre avec un coucher soleil" >
         <img src="image/img3.jpg" class="img_slider" alt= "personne tenant un nuage un peu informatique">
         <div class="texte_slider">
-          <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et officia fugit iusto quae cumque minus maxime. Illo vel corporis sequi atque, possimus odit pariatur maxime reiciendis ex aspernatur soluta enim!S</h5>
-          <a href="https://google.fr" id="abutton">
+          <h5 class="droit"><p class="titre">Qui sont-ils?</p> Avec plus de <strong>100 000 colaborateurs</strong> et <strong>36 million de clients</strong> dans le monde, le groupe BPCE est l'un des acteurs banquaires les plus important de France. Il represente plus de <strong>20% du financement de l'économie française</strong>...</h5>
+          <a href="page1.html" id="abutton" target="_blank">
             <i class="fa-solid fa-circle-chevron-right fa-2xl" id="buttonslide" ></i>
           </a>
         </div>        
     </div>
   </div>
+  
 
   <!-- slider 02 -->
-
   <div class="blanc">
-    <img src="image/fondv0.png" alt="blanc02">
+    <img src="image/etoilep2.png" alt="blanc02">
+
   </div>
-  
-  <div class="bandeau_slider container-fluid" id="slider02" >
+  <div class="bandeau_slider container-fluid" id="slider02" style="border-top-width: 3px; border-top-style: solid;border-bottom-width: 3px;border-bottom-style: solid;">
           
     <img src="image/transparentViolet02.png" id="transparent02" class="img_trans" alt="fond tranparent violet">
     
-    <div class="slider">
+    <div class="slider inverse">
         <img src="image/img1.jpg" class="img_slider02 active02" alt= "arbre avec un coucher soleil" >
         <img src="image/img3.jpg" class="img_slider02" alt= "personne tenant un nuage un peu informatique">
-        <div class="texte_slider">
-          <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et officia fugit iusto quae cumque minus maxime. Illo vel corporis sequi atque, possimus odit pariatur maxime reiciendis ex aspernatur soluta enim!S</h5>
-          <a href="https://google.fr" id="abutton02">
-            <i class="fa-solid fa-circle-chevron-right fa-2xl" id="buttonslide02" ></i>
+        <div class="texte_slider inverse2" id="inverse2">
+
+          <h5 id="h5s2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et officia fugit iusto quae cumque minus maxime. Illo vel corporis sequi atque, possimus odit pariatur maxime reiciendis ex aspernatur soluta enim!S</h5>
+          <a href="page2.html" id="abutton02" target="_blank">
+            <i class="fa-solid fa-circle-chevron-left fa-2xl" id="buttonslide02" ></i>
           </a>
         </div>        
     </div>
@@ -108,11 +108,10 @@ slider & design by Yonnis Peyrous -->
 
   <!-- slider 03 -->
 
-  <div class="blanc">
-    <img src="image/fondv0.png" alt="blanc03" id="blanc03">
+  <div class="blanc" >
+    <img src="image/etoilep3.png" alt="blanc03" id="blanc03">
   </div>
-  
-  <div class="bandeau_slider container-fluid" id="slider03" >
+  <div class="bandeau_slider container-fluid" id="slider03" style="border-top-width: 3px;border-top-style: solid;">
           
     <img src="image/transparentViolet02.png" id="transparent03" class="img_trans" alt="fond tranparent violet">
     
@@ -120,17 +119,25 @@ slider & design by Yonnis Peyrous -->
         <img src="image/img1.jpg" class="img_slider03 active03" alt= "arbre avec un coucher soleil" >
         <img src="image/img3.jpg" class="img_slider03" alt= "personne tenant un nuage un peu informatique">
         <div class="texte_slider">
-          <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et officia fugit iusto quae cumque minus maxime. Illo vel corporis sequi atque, possimus odit pariatur maxime reiciendis ex aspernatur soluta enim!S</h5>
-          <a href="https://google.fr" id="abutton03">
+          <h5 class="droit">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et officia fugit iusto quae cumque minus maxime. Illo vel corporis sequi atque, possimus odit pariatur maxime reiciendis ex aspernatur soluta enim!S</h5>
+          <a href="page3.html" id="abutton03" target="_blank">
             <i class="fa-solid fa-circle-chevron-right fa-2xl" id="buttonslide03" ></i>
           </a>
         </div>        
     </div>
   </div>
-                <!-- FIN Slider présentation pages annexes -->
-<div class="blanc">
-  <img src="image/fondv0.png" alt="blanc0">
-</div>
+                <!-- FIN Slider presentation pages annexes -->
+  <!-- </div> -->
+
+
+<footer class="bg-dark text-center text-white" id="footer">
+  <div class="container">
+    <section>
+      <div class="text-center p-3 bg-dark">
+        <p style="margin-top:16px">© 2022 Dynos'Analyse <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=242269.html" style="text-decoration: none; color:white">(Théo GOUSSOT, Yonnis Peyrous, Rémi Freymond, Alexandre Garnier)</a>         <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/tgoussot/G6_SAE1.05-06_BPCE-IT" role="button" target="_blank"><i class="fab fa-github"></i></a></p>
+      </div>
+    </section>
+</footer>
 <script src="js/index.js"></script>
 
 

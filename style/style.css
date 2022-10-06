@@ -1,341 +1,403 @@
-* {
+/* ==============style (CSS)================ */
+
+* {                                           /* sur tout le body */
+  margin: 0;                                  /* supression des marges */
+  padding: 0;                                 /* supression des espaces entre les blocs */
+  box-sizing: border-box;                     /* regule le positionnement des blocs contenus dans d'autres */
+}
+
+body{
+  background-color: black;
+}
+/* .background{
+  background-image: url(../image/fondtest2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100% ;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  margin-top: -1px;
+} */
 
-/* ----------------img top navbar--------------- */
-
-video {
-  width: 100%;
-  height: auto;
-  
-}
-
-.header {
-  text-align: center;
+.blanc img{                                   /* pour toute les images de la classe .blanc */
+  width: 100%;                                /* reglage de la largeur a 100% (par rapport a la largeur de la page) */
+  object-fit: cover;
+  height: 150px;
   margin: 0;
   padding: 0;
-  margin-bottom: 0;
-  
+
 }
 
-.figure {
-  margin-bottom: 0;
-  width: 100%;
-  height: auto;  
+/* .blanc{
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  border-left: hidden;
+  border-right: hidden;
+  border-top:hidden;
+  margin-top: -3px;
+  margin-bottom: -3px;
+  z-index: 0;
+} */
+
+/* .navbar{
+  border-bottom: solid;
+  border-bottom-color: #000;
+  border-bottom-width: 2px;
+} */
+
+
+
+
+@font-face {
+  font-family: "Alef";
+  src: url("font/Alef-Regular.ttf") format("truetype");
+  font-family: "Candara";
+  src: url("font/candara-bold-2.ttf") format("truetype");
 }
 
-/* ----------------navbar---------------- */
+/* =============img top navbar============= */
 
-nav{
-  background-color: #9e70a2;
-  margin-top: -8px;
+video {                                       /* sur toutes les videos */
+  width: 100%;                                /* la largeur de la video doit etre contenue dans la largeur de la page (sans scroll) */
+  height: auto;                               /* adapte la hauteur de la video a la longueur impose pour respecter le format */
 }
 
-nav:before{
-    visibility: hidden;  
-    transform: scaleX(0);  
-    transition: all 0.3s ease-in-out;
-}
-  
-
-.navbar-nav{
-  justify-content: flex-end;
+.header {                                     /* a toute la classe .header (ici l'animation top navbar) */
+  margin: 0;                                  /* supression des marges */
+  padding: 0;                                 /* supression des espaces entre les blocs */  
 }
 
+.figure {                                     /* a toutes les figures */
+  margin-bottom: 0;                           /* supression de la marge du bas */
+  width: 100%;                                /* la largeur de la figure ne doit pas depasser de la page */
+  height: auto;                               /* adapte la hauteur de la figure pour respecter le format */
+}
 
-.navbar-brand{
-  color: white;
-  margin-left: 10px;
+/* =================navbar================== */
+
+nav{                                          /* a toute les barres de navigation */
+  background-color: #9e70a2;                /* changement de la couleur de laarre pour une couleur de la palette choisie */ 
+  margin-top: -8px;                           /* reglage de la marge du haut a -8px (car decalage de la video) */    
+}
+
+.navbar-nav{                                  /* a toute la classe .navbar-nav */
+  justify-content: flex-end;                  /* aligne le contenue du bloc a droite */
+}
+
+.navbar-brand{                                /* a toute la classe .navbar-brand */
+  color: white;                             /* reglage de la couleur au blanc */
+  margin-left: 10px;                          /* reglage de la marge gauche a 10px */
+  font-weight: bold;                          /* reglage du texte en gras */
+  text-decoration: underline 3px !important ; /* soulignement du texte (epaisseur de 3px) + signalement d'un element important (resolution bug) */
+  padding-top: 0;                             /* supression de l'espace superieur du bloc */
+  margin-top: 0;                              /* supression de la marge du haut */
+}
+
+.navbar-brand:hover{                          /* a toute la classe .navbar-brand quand la souris passe dessus */
+  color: white;                             /* changement de la couleur a blanc */
+}
+
+.nav-link{                                    /* a toute la classe nav-link */
+  color: white !important;                  /* reglage de la couleur a blanc + signalement d'un element important (resolution bug) */
+  margin: 5px;                                /* reglage des marges a 5px */
+  border-radius: 10%;                         /* arondissement des angles du bloc */
+}
+
+.navbar-toggler-icon{                         /* a toute la classe .navbar-toggler-icon */
+  background-image: url(https://cdn-icons-png.flaticon.com/512/5458/5458378.png);  /* logo Dynos'Analyse */
+}
+
+.navbar-toggler:focus{                        /* a toute la classe .navbar-toggler quand ce qui la compose est selectionner */
+  box-shadow: none;                           /* enleve les ombres */
+}
+
+.nav-link:hover{                              /* a toute la classe .nav-toggler quand la souris passe dessus */
+  background-color: #6c4774;                /* changement de la couleur de l'ariere plan des liens hypertexts */
+  transition: .6s;                            /* mettre un temps de transition entre les deux couleur d'arriere plan */
+}
+
+@media screen and (max-width: 990px) {        /* media query quand la taille de la page est inferieur a 990px */
+  .nav-link{                                  /* a toute la classe .nav-link */
+    max-width: 120px;                          /* reglage de la largeur maximum a 60px */
+  }
+}
+
+
+/* ===========Slider redirection=========== */
+
+
+.slider {                                     /* a toute la classe .slider */
+  z-index: 1;                                 /* positionement sur le plan de rang 1 */
+  height: 80vh;                               /* reglage de la hauteur a 80vh */
+  display: flex;                              /* declaration d'un conteneur flex */
+  justify-content: flex-end;                  /* alignement des elements a droite  */
+}
+
+.slider .img_slider {                         /* pour toute la classe .img_slider se trouvant dans la classe .slider */
+  object-fit:cover;                           /* reglage de la facon dont les images doivent etre redimentionner */
+  height: 100%;                               /* reglage de la hauteur a 100% */
+  width: 100%;                                /* reglage de la largeur a 100% (avec l'atribut cover, l'image ne se deforme pas mais rempli le conteneur a la taille maximum disponible)  */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans contrainte par rapport aux autres conteneur) */
+  top: 0;                                     /* coller les images le plus haut possible */
+  left: 0;                                    /* coller les images le plus a gauche possible */
+  opacity: 0;                                 /* mettre les images totalement transparente pour ne pas les voires */
+  transition: opacity 0.5s;                   /* lorsque les images deviennent transparentes elles le font en 0.5s */
+}
+
+.slider .img_slider02 {                       /* pour toute la classe .img_slider02 se trouvant dans la classe .slider */
+  object-fit:cover;                           /* reglage de la facon dont les images doivent etre redimentionner */
+  height: 100%;                               /* reglage de la hauteur a 100% */
+  width: 100%;                                /* reglage de la largeur a 100% (avec l'atribut cover, l'image ne se deforme pas mais rempli le conteneur a la taille maximum disponible)  */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans contrainte par rapport aux autres conteneur) */
+  top: 0;                                     /* coller les images le plus haut possible */
+  left: 0;                                    /* coller les images le plus a gauche possible */
+  opacity: 0;                                 /* mettre les images totalement transparente pour ne pas les voires */
+  transition: opacity 0.5s;                   /* lorsque les images deviennent transparentes elles le font en 0.5s */
+}
+
+.slider .img_slider03 {                       /* pour toute la classe .img_slider03 se trouvant dans la classe .slider */
+  object-fit:cover;                           /* reglage de la facon dont les images doivent etre redimentionner */
+  height: 100%;                               /* reglage de la hauteur a 100% */
+  width: 100%;                                /* reglage de la largeur a 100% (avec l'atribut cover, l'image ne se deforme pas mais rempli le conteneur a la taille maximum disponible)  */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans contrainte par rapport aux autres conteneur) */
+  top: 0;                                     /* coller les images le plus haut possible */
+  left: 0;                                    /* coller les images le plus a gauche possible */
+  opacity: 0;                                 /* mettre les images totalement transparente pour ne pas les voires */
+  transition: opacity 0.5s;                   /* lorsque les images deviennent transparentes elles le font en 0.5s */
+}
+
+.slider img.active {                          /* pour toute les images ayant la classe active dans la classe .slider */
+  opacity: 1;                                 /* reglage de l'opacite a 1 pour voir totalement l'image */
+}
+
+.slider img.active02 {                        /* pour toute les images ayant la classe active02 dans la classe .slider */
+  opacity: 1;                                 /* reglage de l'opacite a 1 pour voir totalement l'image */
+}
+
+.slider img.active03 {                        /* pour toute les images ayant la classe active03 dans la classe .slider */
+  opacity: 1;                                 /* reglage de l'opacite a 1 pour voir totalement l'image */
+}
+
+.bandeau_slider{                              /* pour toute la classe .bandeau_slider */
+  position: relative;                         /* reglage du positionement a relatif pour que les conteneur aient un impacte entre eux */
+  margin: 0;                                  /* supression des marges */
+  padding: 0;                                 /* supressions des espaces entres les blocs */
+}
+
+#transparent01 {                              /* pour l'element d'identifiant transparent01 */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans impacte entre elles) */
+  object-fit: cover;                          /* reglage de la facon dont les images doivent etre redimentionner */
+  height: 100%;                               /* reglage de la hauteur a 100% */
+  width: 100%;                                /* reglage de la largeur a 100% (avec l'atribut cover, l'image ne se deforme pas mais rempli le conteneur a la taille maximum disponible)  */
+  z-index: 2;                                 /* positionement sur le plan de rang 2 */
+  margin-left: -12px;                         /* reglage de la marge gauche a -12px (resolution bug) */
+}
+
+#transparent02 {                              /* pour l'element d'identifiant transparent02 */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans impacte entre elles) */
+  object-fit: cover;                          /* reglage de la facon dont les images doivent etre redimentionner */
+  height: 100%;                               /* reglage de la hauteur a 100% */
+  width: 100%;                                /* reglage de la largeur a 100% (avec l'atribut cover, l'image ne se deforme pas mais rempli le conteneur a la taille maximum disponible)  */
+  z-index: 2;                                 /* positionement sur le plan de rang 2 */
+  margin-left: -12px;                         /* reglage de la marge gauche a -12px (resolution bug) */
+  transform: rotate(180deg);                  /* retourne l'image sur l'axe des y */
+}
+
+#transparent03 {                              /* pour l'element d'identifiant transparent03 */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans impacte entre elles) */
+  object-fit: cover;                          /* reglage de la facon dont les images doivent etre redimentionner */
+  height: 100%;                               /* reglage de la hauteur a 100% */
+  width: 100%;                                /* reglage de la largeur a 100% (avec l'atribut cover, l'image ne se deforme pas mais rempli le conteneur a la taille maximum disponible)  */
+  z-index: 2;                                 /* positionement sur le plan de rang 2 */
+  margin-left: -12px;                         /* reglage de la marge gauche a -12px (resolution bug) */
+}
+
+.slider .texte_slider{                        /* pour toute la classe .texte_slider dans la classe .slider */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans impacte entre elles) */
+  padding: 25px 100px 25px 0;                 /* reglage de l'espacement entre les conteneurs */
+  top: 50%;                                   /* espacement de 50% de la taille du conteneur par rapport au haut */
+  transform: translateY(-50%);                /* decalage de -50% sur l'axe des ordonnee */
+  display: flex;                              /* declaration du conteneur comme etant flex */
+  z-index: 3;                                 /* positionement sur le plan de rang 3 */
+  max-width: 950px;                           /* la hauteur maximum doit se situer a 950px */
+  width: 40%;                                 /* reglage de la largeur a 40% de sa taille originel (par rapport a la taille de la page) */
+  min-width: 300px;                           /* la largeur minimum doit se situer a 300px */
+  color: #fff;                              /* reglage de la couleur du texte en blanc */
+}
+
+.slider .texte_slider h5 {                    /* pour tout les h5 dans la classe .texte_slider et .slider */
+  padding-right: 70px;                        /* reglage de l'espacement droit entre les blocs a 70px */
+  font-size: 30px;                            /* reglage de la taille du texte a 35px */
+  text-align: right;                          /* alignement du texte a droite*/
+  font-family: "Alef";
+}
+
+.titre{
   font-weight: bold;
-  text-decoration: underline 3px !important ;
-  padding-top: 0;
-  margin-top: 0;
+  font-size: 40px;
+  font-family: "Candara"; 
 }
 
-.navbar-brand:hover{
-  color: white;
+/* .slider .texte_slider .h5 p{
+  font-family: "Candara";
+} */
+
+.inverse {                                    /* pour toute la classe .inverse */
+  justify-content: flex-start;                /* aligne les elements a gauche*/
 }
 
-.nav-link{
-  color: white !important;
-  margin: 5px;
-  text-decoration-color: white;
-  transition-property: white;
-  border-radius: 10%;
+#h5s2 {                                       /* pour l'element h5s2 */
+  padding-right: 0px;                         /* supression de l'espacement droit */
+  text-align: left;                           /* alignement du texte a gauche*/
+  padding-left: 70px;                         /* reglage de l'espacement gauche a 70px */
 }
 
-
-.navbar-toggler-icon{
-  background-image: url(https://cdn-icons-png.flaticon.com/512/5458/5458378.png);
+#inverse2 {                                    /* pour toute la classe .inverse2 */
+  padding: 25px 0 25px 100px;                  /* reglage de l'espacement */
+  flex-direction: row-reverse;                 /* inversion de l'ordre des enfants du conteneur parent */
 }
 
-.navbar-toggler:focus{
-  box-shadow: none;
+/* -------------button slider--------------- */
+
+.slider #buttonslide{                         /* pour l'element d'identifiant bouttonslide dans la classe .slider */
+  z-index: 8;                                 /* positionement sur le plan de rang 8 */
+  margin: 0;                                  /* supression des marges */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans impacte entre elles) */
+  color: #ffffff;                           /* reglage la couleur de l'element en blanc */
+  top: 50%;                                   /* le haut du conteneur parent se trouve a 50% de la taille de l'element */
 }
 
-#currentAccueil{
-  text-decoration: white 3px underline;
+.slider #buttonslide02{                       /* pour l'element d'identifiant bouttonslide02 dans la classe .slider */
+  z-index: 8;                                 /* positionement sur le plan de rang 8 */
+  margin: 0;                                  /* supression des marges */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans impacte entre elles) */
+  color: #ffffff;                           /* reglage la couleur de l'element en blanc */
+  top: 50%;                                   /* le haut du conteneur parent se trouve a 50% de la taille de l'element */
 }
 
-#currentAccueil:hover{
-  text-decoration: 3px underline;
+.slider #buttonslide03{                       /* pour l'element d'identifiant bouttonslide03 dans la classe .slider */
+  z-index: 8;                                 /* positionement sur le plan de rang 8 */
+  margin: 0;                                  /* supression des marges */
+  position: absolute;                         /* reglage de la facon dont seront positionnes les images (sans impacte entre elles) */
+  color: #ffffff;                           /* reglage la couleur de l'element en blanc */
+  top: 50%;                                   /* le haut du conteneur parent se trouve a 50% de la taille de l'element */
 }
 
-.nav-link:hover{
-  background-color: #6c4774;
-  transition: .9s;
+#abutton {                                    /* pour l'element d'identifiant abutton */
+  transition: .2s ease-in;                    /* les transition dureront 0.2s et auront un demarage lent */
 }
 
-@media screen and (max-width: 1000px) {
-  .nav-link{
-    max-width: 60px;
+#abutton:hover {                              /* pour l'element d'identifiant abutton quand la souris passe dessus */
+  transform: translateX(-3px) scale(1.2);     /* deplace legerement le bouton et augmente sa taille de 20% */
+}
+
+#abutton02 {                                  /* pour l'element d'identifiant abutton02 */
+  transition: .2s ease-in;                    /* les transition dureront 0.2s et auront un demarage lent */
+}
+
+#abutton02:hover {                            /* pour l'element d'identifiant abutton02 quand la souris passe dessus */
+  transform: translateX(-3px) scale(1.2);    /* deplace legerement le bouton et augmente sa taille de 20% */
+}
+
+#abutton03 {                                  /* pour l'element d'identifiant abutton03 */
+  transition: .2s ease-in;                    /* les transition dureront 0.2s et auront un demarage lent */
+}
+#abutton03:hover {                            /* pour l'element d'identifiant abutton03 quand la souris passe dessus */
+  transform: translateX(-3px) scale(1.2);     /* deplace legerement le bouton et augmente sa taille de 20% */
+}
+#footer{                                      /* pour l'element d'identifiant footer */
+  position: relative;                         /* reglage de la facon dont est gerer le rapport aux autres elements a relatif */
+}
+
+/* ---------------media slider--------------- */
+
+@media screen and (max-width: 1250px) {       /* media query quand la largeur de la page est inferieur a 1250px */
+  #slider{                                    /* pour l'element d'identifiant slider */
+    max-height: 450px;                        /* reglage de la hauteur maximum a 450px */
+  }
+  #slider02{                                  /* pour l'element d'identifiant slider02 */
+    max-height: 450px;                        /* reglage de la hauteur maximum a 450px */
+  }
+  #slider03{                                  /* pour l'element d'identifiant slider03 */
+    max-height: 450px;                        /* reglage de la hauteur maximum a 450px */
+  }
+  .slider .texte_slider{                      /* pour toute la classe .texte_slider dans la classe .slider */
+    top: 50%;                                 /* reglage de la distance du haut du conteneur parent a 50% */
+    padding:  25px;                           /* reglage des espacement entre les conteneurs a 25px */
+    z-index: 3;                               /* positionement sur le plan de rang 3 */
+    width: 95%;                               /* reglage de la largeur a 95% */
+    height: auto;                             /* la hauteur s'adapte a la largeur */
+    color: #fff;                            /* reglage de la couleur a blanc */
+    flex-direction: column;                   /* reglage de la disposition des elements (les uns en dessous des autres) */
+    align-items: center;                      /* mise en place des elements au centre */
+  }
+  .droit{                                     /* pour toute la classe droit */
+    transform: translateY(-130px);            /* decalage de 130px vers le haut (axe Y) */
+  }
+  .slider .texte_slider h5 {                  /* pour les h5 dans la classe .texte_slider et .slider */
+    margin-top: 250px;                        /* reglage de la marge superieur a 250 px */
+    font-size: 25px;                          /* reglage de la taille du texte a 25px */
+    text-align: center;                       /* alignement des elements au centre */
+    padding-right: 0;                         /* supression de l'espacement a droite */
+  }
+  .slider .texte_slider #abutton i {          /* pour le i dans l'element d'identifiant abutton */
+    margin-top: 100px;                         /* reglage de la marge superieur a 50% */
+    transform: translateX(-70%);              /* decalage de l'element de -70% sur l'axe des x */
+  }
+  .slider .texte_slider #abutton:hover {      /* pour l'element d'identifiant abutton quand la souris passe dessus */
+    transform: none;                          /* supression des transformations */
+  }
+  .slider .texte_slider #abutton02 i {        /* pour le i dans l'element d'identifiant abutton02 */
+    margin-top: 100px;                         /* reglage de la marge superieur a 50% */
+    transform: translateX(-70%);              /* decalage de l'element de -70% sur l'axe des x */
+  }
+  .slider .texte_slider #abutton02:hover {    /* pour l'element d'identifiant abutton02 quand la souris passe dessus */
+    transform: none;                          /* supression des transformations */  
+  }
+  .slider .texte_slider #abutton03 i {        /* pour le i dans l'element d'identifiant abutton03 */
+    margin-top: 100px;                         /* reglage de la marge superieur a 50% */
+    transform: translateX(-70%);              /* decalage de l'element de -70% sur l'axe des x */
+  }
+  .slider .texte_slider #abutton03:hover {    /* pour l'element d'identifiant abutton03 quand la souris passe dessus */
+    transform: none;                          /* supression des transformations */
+  }
+
+  #h5s2{                                      /* pour l'element h5s2 */
+    margin-top: 250px;                        /* reglage de la marge superieur a 250 px */
+    font-size: 25px;                          /* reglage de la taille du texte a 25px */
+    text-align: center;                       /* alignement des elements au centre */
+    padding-left: 0;                         /* supression de l'espacement a droite */
+  }
+  #inverse2{                                  /* pour l'element inverse2 */
+    top: 50%;                                 /* reglage de la distance du haut du conteneur parent a 50% */
+    padding:  25px;                           /* reglage des espacement entre les conteneurs a 25px */
+    z-index: 3;                               /* positionement sur le plan de rang 3 */
+    width: 95%;                               /* reglage de la largeur a 95% */
+    height: auto;                             /* la hauteur s'adapte a la largeur */
+    color: #fff;                            /* reglage de la couleur a blanc */
+    flex-direction: column;                   /* reglage de la disposition des elements (les uns en dessous des autres) */
+    align-items: center;                      /* mise en place des elements au centre */
+    padding-bottom: 300px;                    /* reglage de l'espacement inferieur a 300px */
   }
 }
 
-
-/* -------------------Slider presentation pages annexes-------------------- */
-
-
-.slider {
-  z-index: 1;
-  height: 80vh;
-  display: flex;
-  justify-content: flex-end;
-
-}
-
-.slider .img_slider {
-  object-fit:cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.slider .img_slider02 {
-  object-fit:cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.slider .img_slider03 {
-  object-fit:cover;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.slider img.active {
-  opacity: 1;
-}
-
-.slider img.active02 {
-  opacity: 1;
-}
-
-.slider img.active03 {
-  opacity: 1;
-}
-
-.bandeau_slider{
-  position: relative; 
-  margin: 0;
-  padding: 0;
-}
-
-#transparent01 {
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  margin-left: -12px;
-}
-
-#transparent02 {
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  margin-left: -12px;
-}
-
-#transparent03 {
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  margin-left: -12px;
-}
-
-.slider .texte_slider{
-  position: absolute;
-  padding: 25px 100px 25px 0;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  z-index: 3;
-  max-width: 950px;
-  width: 40%;
-  min-width: 300px;
-  color: #fff;
-
-}
-.slider .texte_slider h5 {
-  padding-right: 70px;
-  font-size: 35px;
-}
-
-/* button slider */
-
-.slider #buttonslide{
-  z-index: 8;
-  height: 20%;
-  margin: 0;
-  position: absolute;
-  color: #ffffff;
-  top: 50%;
-  transform: translateY(-50%, -50%);
-}
-
-.slider #buttonslide02{
-  z-index: 8;
-  height: 20%;
-  margin: 0;
-  position: absolute;
-  color: #ffffff;
-  top: 50%;
-  transform: translateY(-50%, -50%);
-}
-
-.slider #buttonslide03{
-  z-index: 8;
-  height: 20%;
-  margin: 0;
-  position: absolute;
-  color: #ffffff;
-  top: 50%;
-  transform: translateY(-50%, -50%);
-}
-
-#abutton {
-  transition: .2s ease-in;
-}
-#abutton:hover {
-  transform: translateX(-3px) scale(1.2);
-}
-
-#abutton02 {
-  transition: .2s ease-in;
-}
-#abutton02:hover {
-  transform: translateX(-3px) scale(1.2);
-}
-
-#abutton03 {
-  transition: .2s ease-in;
-}
-#abutton03:hover {
-  transform: translateX(-3px) scale(1.2);
-}
-
-/* slider responsive */
-
-@media screen and (max-width: 1250px) {
-  #slider{
-    max-height: 450px;
+@media screen and (max-width: 750px) {        /* media query quand la largeur de la page est inferieur a 750px */
+  .slider .texte_slider{                      /* pour toute la classe .texte_slider dans la classe .slider */
+    top: 40%;                                 /* reglage de l'espacement entre le cote de l'element et le bord du conteneur parent a 50% */
   }
-  #slider02{
-    max-height: 450px;
+  #inverse2{                                  /* pour l'element d'identifiant inverse2 */
+    margin-top: -45px;                        /* reglage de la marge superieur a -45px */
   }
-  #slider03{
-    max-height: 450px;
+  .slider .texte_slider #abutton i {          /* pour les i dans l'element d'identifiant abutton */ 
+    margin-top: 200px;                        /* reglage de la marge superieur a 200px */
   }
-
-  .slider .texte_slider{
-    top: 50%;
-    padding:  25px;
-    z-index: 3;
-
-    /* max-width: 80%; */
-    
-
-    width: 95%;
-    height: auto;
-    color: #fff;
-    flex-direction: column;
-    align-items: center;
+  .slider .texte_slider #abutton02 i {        /* pour les i dans l'element d'identifiant abutton02 */ 
+    margin-top: 200px;                        /* reglage de la marge superieur a 200px */
   }
-  
-  .slider .texte_slider h5 {
-    margin-top: 250px;
-    padding-bottom: 300px;
-    font-size: 25px;
-    text-align: center;
-    padding-right: 0;
-  }
-  .slider .texte_slider #abutton i {
-    margin-top: 50px;
-    transform: translateX(-70%);
-  }
-  .slider .texte_slider #abutton:hover {
-    transform: none;
-  }
-  .slider .texte_slider #abutton02 i {
-    margin-top: 50px;
-    transform: translateX(-70%);
-  }
-  .slider .texte_slider #abutton02:hover {
-    transform: none;
-  }
-  .slider .texte_slider #abutton03 i {
-    margin-top: 50px;
-    transform: translateX(-70%);
-  }
-  .slider .texte_slider #abutton03:hover {
-    transform: none;
-  }
-  .blanc img{
-    height: 150px;
-    object-fit: cover;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .slider .texte_slider{
-    top: 40%;
-  }
-  .slider .texte_slider #abutton i {
-    margin-top: 200px;
-  }
-  .slider .texte_slider #abutton02 i {
-    margin-top: 200px;
-  }
-  .slider .texte_slider #abutton03 i {
-    margin-top: 200px;
+  .slider .texte_slider #abutton03 i {        /* pour les i dans l'element d'identifiant abutton03 */ 
+    margin-top: 200px;                        /* reglage de la marge superieur a 200px */
   }
 
 }
 
-/* ------------------------------------------------------------------------ */
-
-.blanc img{
-  width: 100%;
-  
-}
+/* ========================================= */
