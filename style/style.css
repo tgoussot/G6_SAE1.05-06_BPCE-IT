@@ -1,9 +1,12 @@
 /* ==============style (CSS)================ */
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap%27');
+
 
 * {                                           /* sur tout le body */
   margin: 0;                                  /* supression des marges */
   padding: 0;                                 /* supression des espaces entre les blocs */
   box-sizing: border-box;                     /* regule le positionnement des blocs contenus dans d'autres */
+  font-family: "Alef";
 }
 
 body{
@@ -21,10 +24,18 @@ body{
 .blanc img{                                   /* pour toute les images de la classe .blanc */
   width: 100%;                                /* reglage de la largeur a 100% (par rapport a la largeur de la page) */
   object-fit: cover;
-  height: 150px;
+  height: 250px;
   margin: 0;
   padding: 0;
 
+}
+
+.titre p{
+  font-family: "Candara"
+}
+
+.bandeau_slider{
+  box-shadow: 0 0 15px 0 rgba(0,0,0);
 }
 
 /* .blanc{
@@ -48,12 +59,12 @@ body{
 
 
 
-@font-face {
+/* @font-face {
   font-family: "Alef";
   src: url("font/Alef-Regular.ttf") format("truetype");
   font-family: "Candara";
   src: url("font/candara-bold-2.ttf") format("truetype");
-}
+} */
 
 /* =============img top navbar============= */
 
@@ -128,9 +139,10 @@ nav{                                          /* a toute les barres de navigatio
 
 .slider {                                     /* a toute la classe .slider */
   z-index: 1;                                 /* positionement sur le plan de rang 1 */
-  height: 80vh;                               /* reglage de la hauteur a 80vh */
+  height: 720px;                               /* reglage de la hauteur a 80vh */
   display: flex;                              /* declaration d'un conteneur flex */
   justify-content: flex-end;                  /* alignement des elements a droite  */
+  transition: .3s;
 }
 
 .slider .img_slider {                         /* pour toute la classe .img_slider se trouvant dans la classe .slider */
@@ -379,6 +391,12 @@ nav{                                          /* a toute les barres de navigatio
     align-items: center;                      /* mise en place des elements au centre */
     padding-bottom: 300px;                    /* reglage de l'espacement inferieur a 300px */
   }
+  .slider{
+    height: 400px;
+  }
+  .blanc img{
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 750px) {        /* media query quand la largeur de la page est inferieur a 750px */
@@ -396,6 +414,10 @@ nav{                                          /* a toute les barres de navigatio
   }
   .slider .texte_slider #abutton03 i {        /* pour les i dans l'element d'identifiant abutton03 */ 
     margin-top: 200px;                        /* reglage de la marge superieur a 200px */
+  }
+  .slider{
+    height: 400px;
+ 
   }
 
 }
