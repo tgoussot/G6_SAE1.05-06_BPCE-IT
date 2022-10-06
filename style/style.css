@@ -238,10 +238,10 @@ nav{                                          /* a toute les barres de navigatio
 
 #abutton02 {                                  /* pour l'element d'identifiant abutton02 */
   transition: .2s ease-in;                    /* les transition dureront 0.2s et auront un demarage lent */
-  transform: rotate(180deg);                  /* inverse le bouton sur l'axe y */
 }
+
 #abutton02:hover {                            /* pour l'element d'identifiant abutton02 quand la souris passe dessus */
-  transform: translateX(-3px) scale(1.2) rotate(180deg); /* deplace legerement le bouton et augmente sa taille de 20% */
+  transform: translateX(-3px) scale(1.2);    /* deplace legerement le bouton et augmente sa taille de 20% */
 }
 
 #abutton03 {                                  /* pour l'element d'identifiant abutton03 */
@@ -281,21 +281,21 @@ nav{                                          /* a toute les barres de navigatio
     padding-right: 0;                         /* supression de l'espacement a droite */
   }
   .slider .texte_slider #abutton i {          /* pour le i dans l'element d'identifiant abutton */
-    margin-top: 70px;                         /* reglage de la marge superieur a 50% */
+    margin-top: 100px;                         /* reglage de la marge superieur a 50% */
     transform: translateX(-70%);              /* decalage de l'element de -70% sur l'axe des x */
   }
   .slider .texte_slider #abutton:hover {      /* pour l'element d'identifiant abutton quand la souris passe dessus */
     transform: none;                          /* supression des transformations */
   }
   .slider .texte_slider #abutton02 i {        /* pour le i dans l'element d'identifiant abutton02 */
-    margin-top: 70px;                         /* reglage de la marge superieur a 50% */
+    margin-top: 100px;                         /* reglage de la marge superieur a 50% */
     transform: translateX(-70%);              /* decalage de l'element de -70% sur l'axe des x */
   }
   .slider .texte_slider #abutton02:hover {    /* pour l'element d'identifiant abutton02 quand la souris passe dessus */
-    transform: rotate(180deg);                          /* supression des transformations */
+    transform: none;                          /* supression des transformations */
   }
   .slider .texte_slider #abutton03 i {        /* pour le i dans l'element d'identifiant abutton03 */
-    margin-top: 70px;                         /* reglage de la marge superieur a 50% */
+    margin-top: 100px;                         /* reglage de la marge superieur a 50% */
     transform: translateX(-70%);              /* decalage de l'element de -70% sur l'axe des x */
   }
   .slider .texte_slider #abutton03:hover {    /* pour l'element d'identifiant abutton03 quand la souris passe dessus */
@@ -306,22 +306,30 @@ nav{                                          /* a toute les barres de navigatio
     object-fit: cover;                        /* reglage de la facon dont les images doivent etre redimentionner */
   }
   #h5s2{                                      /* pour l'element h5s2 */
-    text-align: center;                       /* alignement du texte au centre */
     margin-top: 250px;                        /* reglage de la marge superieur a 250 px */
-    padding-bottom: 300px;                    /* reglage de l'espacement inferieur a 300px */
     font-size: 25px;                          /* reglage de la taille du texte a 25px */
-    padding-left: 0;                          /* supression de l'espacement gauche */
+    text-align: center;                       /* alignement des elements au centre */
+    padding-left: 0;                         /* supression de l'espacement a droite */
   }
   #inverse2{                                  /* pour l'element inverse2 */
-    padding: 0;                               /* supression des espacement */
-    flex-direction: column;
-    align-items: center;
+    top: 50%;                                 /* reglage de la distance du haut du conteneur parent a 50% */
+    padding:  25px;                           /* reglage des espacement entre les conteneurs a 25px */
+    z-index: 3;                               /* positionement sur le plan de rang 3 */
+    width: 95%;                               /* reglage de la largeur a 95% */
+    height: auto;                             /* la hauteur s'adapte a la largeur */
+    color: #fff;                            /* reglage de la couleur a blanc */
+    flex-direction: column;                   /* reglage de la disposition des elements (les uns en dessous des autres) */
+    align-items: center;                      /* mise en place des elements au centre */
+    padding-bottom: 300px;
   }
 }
 
 @media screen and (max-width: 750px) {        /* media query quand la largeur de la page est inferieur a 750px */
   .slider .texte_slider{                      /* pour toute la classe .texte_slider dans la classe .slider */
     top: 40%;                                 /* reglage de l'espacement entre le cote de l'element et le bord du conteneur parent a 50% */
+  }
+  #inverse2{
+    margin-top: -45px;
   }
   .slider .texte_slider #abutton i {          /* pour les i dans l'element d'identifiant abutton */ 
     margin-top: 200px;                        /* reglage de la marge superieur a 200px */
