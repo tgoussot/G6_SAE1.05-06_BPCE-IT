@@ -427,13 +427,14 @@ nav{                                          /* a toute les barres de navigatio
 .loader-wrapper {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #242f3f;
   display:flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .loader {
   display: inline-block;
@@ -442,7 +443,7 @@ nav{                                          /* a toute les barres de navigatio
   position: relative;
   border: 4px solid #Fff;
   animation: loader 2s infinite ease;
-  z-index: 10;
+
 }
 .loader-inner {
   vertical-align: top;
