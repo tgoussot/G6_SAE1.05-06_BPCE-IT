@@ -367,7 +367,7 @@ nav{                                          /* a toute les barres de navigatio
     transform: none;                          /* supression des transformations */  
   }
   .slider .texte_slider #abutton03 i {        /* pour le i dans l'element d'identifiant abutton03 */
-    margin-top: 100px;                         /* reglage de la marge superieur a 50% */
+    margin-top: 125px;                         /* reglage de la marge superieur a 50% */
     transform: translateX(-70%);              /* decalage de l'element de -70% sur l'axe des x */
   }
   .slider .texte_slider #abutton03:hover {    /* pour l'element d'identifiant abutton03 quand la souris passe dessus */
@@ -418,6 +418,22 @@ nav{                                          /* a toute les barres de navigatio
   .slider{
     height: 400px;
  
+  }
+
+  #text1{
+    font-size: 20px;
+  }
+
+  .titre{
+    font-size: 30px;
+  }
+  
+  #h5s2{
+    font-size: 20px;
+  }
+
+  #text3{
+    font-size: 20px;
   }
 
 }
