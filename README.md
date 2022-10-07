@@ -4,6 +4,7 @@
 ## Table des matières 
 * [Présentation Général](#presentation)
 * [Lancer le projet](#lancer)
+* [Avancement du projet](#avancement)
 * [Crédit](#credit)
 *******
 
@@ -18,6 +19,12 @@ Le site que nous développons à pour objectif de présenter l'entreprise BPCE-I
 
 ## Lancer le projet
 Rendez vous sur ce lien : https://tgoussot.github.io/G6_SAE1.05-06_BPCE-IT/index.html
+
+
+<div id='avancemenet'/>
+
+## Avancement du projet
+- 07/10/2022 : La page d'accueil est finalisé, totalement responsive
 
 <div id='credit'/>
 
