@@ -66,7 +66,7 @@ setInterval(function() {
     }
     enleverActiveImagesTrois();
     img_slider03[etape03].classList.add('active03');
-}, 2000)
+}, 5000)
 
 //========================reglage spawn page===========================
 //descente automatique de la page lorsque son format est superieur a 16/9

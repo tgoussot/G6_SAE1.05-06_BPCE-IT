@@ -93,6 +93,7 @@ nav{                                          /* a toute les barres de navigatio
   color: white !important;                  /* reglage de la couleur a blanc + signalement d'un element important (resolution bug) */
   margin: 5px;                                /* reglage des marges a 5px */
   border-radius: 10%;                         /* arondissement des angles du bloc */
+  font-size: 20px;
 }
 
 .navbar-toggler-icon{                         /* a toute la classe .navbar-toggler-icon */
@@ -110,7 +111,7 @@ nav{                                          /* a toute les barres de navigatio
 
 @media screen and (max-width: 990px) {        /* media query quand la taille de la page est inferieur a 990px */
   .nav-link{                                  /* a toute la classe .nav-link */
-    max-width: 120px;                          /* reglage de la largeur maximum a 60px */
+    max-width: 150px;                          /* reglage de la largeur maximum a 60px */
   }
 }
 
@@ -474,4 +475,8 @@ nav{                                          /* a toute les barres de navigatio
 
 #anim1{
   box-shadow: 0 0 20px 0 rgba(0,0,0);  
+}
+
+#anim2{
+  box-shadow: 0 0 20px 0 rgba(0,0,0);
 }
