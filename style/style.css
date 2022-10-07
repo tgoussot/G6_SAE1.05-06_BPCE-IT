@@ -358,7 +358,7 @@ nav{                                          /* a toute les barres de navigatio
   }
 
   #h5s2{                                      /* pour l'element h5s2 */
-    margin-top: 250px;                        /* reglage de la marge superieur a 250 px */
+    /* margin-top: 250px;                        reglage de la marge superieur a 250 px */
     font-size: 25px;                          /* reglage de la taille du texte a 25px */
     text-align: center;                       /* alignement des elements au centre */
     padding-left: 0;                         /* supression de l'espacement a droite */
@@ -388,6 +388,7 @@ nav{                                          /* a toute les barres de navigatio
   }
   #inverse2{                                  /* pour l'element d'identifiant inverse2 */
     margin-top: -45px;                        /* reglage de la marge superieur a -45px */
+    z-index: 5;
   }
   .slider .texte_slider #abutton i {          /* pour les i dans l'element d'identifiant abutton */ 
     margin-top: 200px;                        /* reglage de la marge superieur a 200px */
@@ -417,6 +418,9 @@ nav{                                          /* a toute les barres de navigatio
 
   #text3{
     font-size: 20px;
+  }
+  #s2ts{
+    z-index: 9;
   }
 
 }
