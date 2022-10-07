@@ -21,7 +21,7 @@ Le site que nous développons à pour objectif de présenter l'entreprise BPCE-I
 Rendez vous sur ce lien : https://tgoussot.github.io/G6_SAE1.05-06_BPCE-IT/index.html
 
 
-<div id='avancemenet'/>
+<div id='avancement'/>
 
 ## Avancement du projet
 - 07/10/2022 : La page d'accueil est finalisé, totalement responsive
