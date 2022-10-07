@@ -18,9 +18,24 @@ Le site que nous développons à pour objectif de présenter l'entreprise BPCE-I
 <div id='zooning'/>
 
 ## Zoning et prototypage du site
+### I/ Zonning 
+-  Page d'accueil :
 
 ![](/zoning_prototype/accueil.png)
 
+- Page 1 : 
+
+![](zoning_prototype/page1.png)
+
+- Page 2 : 
+
+![](/zoning_prototype/page2.png)
+
+### II/ Prototype 
+
+- Page d'accueil 
+
+![](/zoning_prototype/prototype.png)
 
 <div id='avancement'/>
 
