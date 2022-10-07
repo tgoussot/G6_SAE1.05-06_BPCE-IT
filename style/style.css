@@ -42,6 +42,7 @@ body{
 
 .bandeau_slider{
   box-shadow: 0 0 15px 0 rgba(0,0,0);
+
 }
 
 
@@ -123,6 +124,7 @@ nav{                                          /* a toute les barres de navigatio
   display: flex;                              /* declaration d'un conteneur flex */
   justify-content: flex-end;                  /* alignement des elements a droite  */
   transition: .3s;
+  margin-top: -7.5px;
 }
 
 .slider .img_slider {                         /* pour toute la classe .img_slider se trouvant dans la classe .slider */
@@ -465,3 +467,4 @@ nav{                                          /* a toute les barres de navigatio
   75% { height: 100%;}
   100% { height: 0%;}
 }
+
