@@ -1,51 +1,56 @@
 /* ==============style (CSS)================ */
-@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap%27'); /* import de la police "Alef" */
 
 
 * {                                           /* sur tout le body */
   margin: 0;                                  /* supression des marges */
   padding: 0;                                 /* supression des espaces entre les blocs */
   box-sizing: border-box;                     /* regule le positionnement des blocs contenus dans d'autres */
-  font-family: "Alef";
+  font-family: "Alef";                        /* reglage de la police par defaut */
 }
 
-body{
-  background-color: black;
+body{                                         /* pour tout le corp de la page */
+  background-color: black;                  /* reglage de la couleur du background a black */
 }
 
+/* ============images de transitions============ */
 
 .blanc img{                                   /* pour toute les images de la classe .blanc */
   width: 100%;                                /* reglage de la largeur a 100% (par rapport a la largeur de la page) */
-  object-fit: cover;
-  height: 250px;
-  margin: 0;
-  padding: 0;
-
+  object-fit: cover;                          /* reglage de la facon dont les images doivent etre redimentionner */
+  height: 250px;                              /* reglage de la hauteur a 250px */
+  margin: 0;                                  /* supression des marges */
+  padding: 0;                                 /* supression des espacements */
 }
-.blanc video{                                   /* pour toute les images de la classe .blanc */
+
+.blanc video{                                 /* pour toute les images de la classe .blanc */
   width: 100%;                                /* reglage de la largeur a 100% (par rapport a la largeur de la page) */
-  object-fit: cover;
-  height: 250px;
-  margin: 0;
-  padding: 0;
-
+  object-fit: cover;                          /* reglage de la facon dont les images doivent etre redimentionner */
+  height: 250px;                              /* reglage de la hauteur a 250px */
+  margin: 0;                                  /* supression des marges */
+  padding: 0;                                 /* supression des espacements */
 }
 
-.blanc figure{
-  margin: 0;
-  padding: 0;
+.blanc figure{                                /* pour toute les figures dans la classe .blanc */
+  margin: 0;                                  /* supression des marges */
+  padding: 0;                                 /* supression des espacements */
 }
 
-.titre p{
-  font-family: "Candara"
+.bandeau_slider{                              /* pour toute la classe .bandeau_slider */
+  box-shadow: 0 0 15px 0 rgba(0,0,0);       /* reglage des ombres */
 }
 
-.bandeau_slider{
-  box-shadow: 0 0 15px 0 rgba(0,0,0);
-
+#anim3{                                       /* pour l'element anim3 */
+  box-shadow: 0 0 20px 0 rgba(0,0,0);       /* reglage des ombres */
 }
 
+#anim1{                                       /* pour l'element anim1 */
+  box-shadow: 0 0 20px 0 rgba(0,0,0);       /* reglage des ombres */
+}
 
+#anim2{                                       /*pour l'element anim2 */
+  box-shadow: 0 0 20px 0 rgba(0,0,0);       /* reglage des ombres */
+}
 
 /* =============img top navbar============= */
 
@@ -93,7 +98,7 @@ nav{                                          /* a toute les barres de navigatio
   color: white !important;                  /* reglage de la couleur a blanc + signalement d'un element important (resolution bug) */
   margin: 5px;                                /* reglage des marges a 5px */
   border-radius: 10%;                         /* arondissement des angles du bloc */
-  font-size: 20px;
+  font-size: 20px;                            /* reglage de la taille de police */
 }
 
 .navbar-toggler-icon{                         /* a toute la classe .navbar-toggler-icon */
@@ -121,11 +126,11 @@ nav{                                          /* a toute les barres de navigatio
 
 .slider {                                     /* a toute la classe .slider */
   z-index: 1;                                 /* positionement sur le plan de rang 1 */
-  height: 720px;                               /* reglage de la hauteur a 80vh */
+  height: 720px;                              /* reglage de la hauteur a 80vh */
   display: flex;                              /* declaration d'un conteneur flex */
   justify-content: flex-end;                  /* alignement des elements a droite  */
-  transition: .3s;
-  margin-top: -7.5px;
+  transition: .3s;                            /* ajout d'une transition de 0.3s lors de mouvement */
+  margin-top: -7.5px;                         /* reglage de la marge superieur a -7.5px */
 }
 
 .slider .img_slider {                         /* pour toute la classe .img_slider se trouvant dans la classe .slider */
@@ -224,18 +229,14 @@ nav{                                          /* a toute les barres de navigatio
   padding-right: 70px;                        /* reglage de l'espacement droit entre les blocs a 70px */
   font-size: 30px;                            /* reglage de la taille du texte a 35px */
   text-align: right;                          /* alignement du texte a droite*/
-  font-family: "Alef";
+  font-family: "Alef";                        /* reglage de la famille de police (Alef) */
 }
 
-.titre{
-  font-weight: bold;
-  font-size: 40px;
-  font-family: "Candara"; 
+.titre{                                       /* pour toute la classe .titre */
+  font-weight: bold;                          /* ajout du style "gras" sur le texte */
+  font-size: 40px;                            /* reglage de la taille de police a 40px */
+  font-family: "Candara";                     /* reglage de la famille de police a Candara */
 }
-
-/* .slider .texte_slider .h5 p{
-  font-family: "Candara";
-} */
 
 .inverse {                                    /* pour toute la classe .inverse */
   justify-content: flex-start;                /* aligne les elements a gauche*/
@@ -250,6 +251,10 @@ nav{                                          /* a toute les barres de navigatio
 #inverse2 {                                    /* pour toute la classe .inverse2 */
   padding: 25px 0 25px 100px;                  /* reglage de l'espacement */
   flex-direction: row-reverse;                 /* inversion de l'ordre des enfants du conteneur parent */
+}
+
+.titre p{                                     /* pour tout les p de la classe .titre */
+  font-family: "Candara"                      /* reglage de la police a Candara */
 }
 
 /* -------------button slider--------------- */
@@ -374,11 +379,11 @@ nav{                                          /* a toute les barres de navigatio
     align-items: center;                      /* mise en place des elements au centre */
     padding-bottom: 300px;                    /* reglage de l'espacement inferieur a 300px */
   }
-  .slider{
-    height: 400px;
+  .slider{                                    /* pour toute la classe .slider */
+    height: 400px;                            /* reglage de la hauteur a 400px */
   }
-  .blanc img{
-    height: 150px;
+  .blanc img{                                 /* pour toute les images de la classe .blanc */
+    height: 150px;                            /* reglage de la hauteur a 150px */
   }
 }
 
@@ -399,65 +404,60 @@ nav{                                          /* a toute les barres de navigatio
   .slider .texte_slider #abutton03 i {        /* pour les i dans l'element d'identifiant abutton03 */ 
     margin-top: 200px;                        /* reglage de la marge superieur a 200px */
   }
-  .slider{
-    height: 400px;
- 
+  .slider{                                    /* pour toute la classe .Slider */
+    height: 400px;                            /* reglage de la hauteur a 400px */
   }
-
-  #text1{
-    font-size: 20px;
+  #text1{                                     /* pour l'element text1 */
+    font-size: 20px;                          /* reglage de la taille de police a 20px */
   }
-
-  .titre{
-    font-size: 30px;
+  .titre{                                     /* pour toute la classe .titre */
+    font-size: 30px;                          /* reglage de la taille de police a 30px */
   }
-  
-  #h5s2{
-    font-size: 20px;
+  #h5s2{                                      /* pour l'element h5s2 */
+    font-size: 20px;                          /* reglage de la taille de police a 20px */
   }
-
-  #text3{
-    font-size: 20px;
+  #text3{                                     /* pour l'element text3 */
+    font-size: 20px;                          /* reglage de la taille de police a 20px */
   }
-  #s2ts{
-    z-index: 9;
+  #s2ts{                                      /* pour l'element s2ts */
+    z-index: 9;                               /* positionement sur le plan de rang 9 */
   }
-
 }
 
-/* ========================================= */
+/* ====================barre loading===================== */
 
 .loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #caaac2;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #Fff;
-  animation: loader 2s infinite ease;
-
-}
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
+  width: 100%;                                /* reglage de la largeur a 100% */
+  height: 100%;                               /* reglage de la hauteur a 100% */
+  position: fixed;                            /* empeche le mouvement */
+  top: 0;                                     /* supression l'espacement vers le top a */
+  left: 0;                                    /* supression de l'espacement vers le bas */
+  background-color: #caaac2;                /* reglage de la couleur de l'arriere-plan */
+  display:flex;                               /* declaration d'un conteneur flex */
+  justify-content: center;                    /* reglage de la position par rapport a la page (centre) */
+  align-items: center;                        /* alignement des elements enfant au centre */  
+  z-index: 10;                                /* positionement dur le plan de rang 10 */
 }
 
-@keyframes loader {
+.loader {                                     /* pour toute la classe .loader */
+  display: inline-block;                      /* positionnement des elements enfants en ligne */
+  width: 30px;                                /* reglage de la largeur a 30px */
+  height: 30px;                               /* reglage de la hauteur a 30px */
+  position: relative;                         /* reglage de la facon dont est gerer le rapport aux autres elements a relatif */
+  border: 4px solid #Fff;                   /* affichage de la border */
+  animation: loader 2s infinite ease;         /* reglage des animations */
+}
+
+.loader-inner {                               /* pour toute la classe .loader-inner */
+  vertical-align: top;                        /* alignement des elements vers le haut */
+  display: inline-block;                      /* positionnement des elements en ligne */
+  width: 100%;                                /* reglage de la largeur a 100% */
+  height: 100%;                               /* reglage de la hauteur a 100% */
+  background-color: #fff;                   /* reglage de la couleur de l'arriere plan */
+  animation: loader-inner 2s infinite ease-in;/* reglages des animations */
+}
+
+@keyframes loader {                           /* mouvement de l'animation */
   0% { transform: rotate(0deg);}
   25% { transform: rotate(180deg);}
   50% { transform: rotate(180deg);}
@@ -465,7 +465,7 @@ nav{                                          /* a toute les barres de navigatio
   100% { transform: rotate(360deg);}
 }
 
-@keyframes loader-inner {
+@keyframes loader-inner {                     /* mouvement de l'animation */
   0% { height: 0%;}
   25% { height: 0%;}
   50% { height: 100%;}
@@ -473,14 +473,5 @@ nav{                                          /* a toute les barres de navigatio
   100% { height: 0%;}
 }
 
-#anim3{
-  box-shadow: 0 0 20px 0 rgba(0,0,0);
-}
 
-#anim1{
-  box-shadow: 0 0 20px 0 rgba(0,0,0);  
-}
-
-#anim2{
-  box-shadow: 0 0 20px 0 rgba(0,0,0);
-}
+/* ========================================================== */
