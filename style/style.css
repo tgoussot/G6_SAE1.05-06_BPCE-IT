@@ -436,7 +436,7 @@ nav{                                          /* a toute les barres de navigatio
   display:flex;                               /* declaration d'un conteneur flex */
   justify-content: center;                    /* reglage de la position par rapport a la page (centre) */
   align-items: center;                        /* alignement des elements enfant au centre */  
-  z-index: 10;                                /* positionement dur le plan de rang 10 */
+  z-index: 15;                                /* positionement dur le plan de rang 10 */
 }
 
 .loader {                                     /* pour toute la classe .loader */
@@ -446,6 +446,7 @@ nav{                                          /* a toute les barres de navigatio
   position: relative;                         /* reglage de la facon dont est gerer le rapport aux autres elements a relatif */
   border: 4px solid #Fff;                   /* affichage de la border */
   animation: loader 2s infinite ease;         /* reglage des animations */
+  z-index :15;
 }
 
 .loader-inner {                               /* pour toute la classe .loader-inner */
@@ -455,6 +456,7 @@ nav{                                          /* a toute les barres de navigatio
   height: 100%;                               /* reglage de la hauteur a 100% */
   background-color: #fff;                   /* reglage de la couleur de l'arriere plan */
   animation: loader-inner 2s infinite ease-in;/* reglages des animations */
+  z-index: 15;
 }
 
 @keyframes loader {                           /* mouvement de l'animation */
