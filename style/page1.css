@@ -1,0 +1,50 @@
+.contenant {
+  position: relative;
+  color: red;
+}
+
+.texte {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  right: 20%;
+}
+
+.image1 {
+  text-align: justify;
+  margin: 0 15px 15px 0;
+  object-fit: cover;
+}
+
+.image2 {
+  height: 400px;
+  width: 400px;
+  float: right;
+  margin: 0 15px 15px 0;
+}
+
+
+.texte_image_page1 {
+  clear: both;
+  column-count: 2;
+}
+
+.column_page1 {
+  float: left;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+.marge {
+  margin: 0px
+}
+
+.image_chiffre {
+  height: 675px;
+}
