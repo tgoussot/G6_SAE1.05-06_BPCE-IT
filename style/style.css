@@ -52,6 +52,10 @@ body{                                         /* pour tout le corp de la page */
   box-shadow: 0 0 20px 0 rgba(0,0,0);       /* reglage des ombres */
 }
 
+#video02 {
+  width: 100%;
+}
+
 /* =============img top navbar============= */
 
 video {                                       /* sur toutes les videos */
