@@ -6,6 +6,7 @@
 	<title>Analyse BPCE-IT</title>
   <link rel="icon" type="image/x-icon" href="image/dynos.png">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="style/style3.css">
 
   <!-- link ajax (button) -->
 
@@ -17,7 +18,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body style="background-color: #fdbeec;">
                         <!-- NAVBAR -->
   <nav class="navbar sticky-top navbar-expand-lg">
     <a class="navbar-brand" href="index.html">Dynos'Analyse</a>
@@ -30,18 +31,38 @@
           <a class="nav-link" href="index.html" id="currentAccueil">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="page1.html">Page 1</a>
+          <a class="nav-link" href="page1.html">Qui sont-ils?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="page2.html">Page 2</a>
+          <a class="nav-link" href="page2.html">Quels Enjeux?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="page3.html" style="font-weight: bold; text-decoration: white 2px underline;">Page 3</a>
+          <a class="nav-link" href="page3.html" style="font-weight: bold; text-decoration: white 2px underline;">Projets Majeurs</a>
         </li>
       </ul>
     </div>
   </nav>
                 <!-- FIN NAVBAR -->
-    <br>
-    <p>page 3</p>              
+  <div class="title_3">
+    <h3> Quels sont les principaux projets de BPCE-IT ?</h3>
+    <p> La branche Infogérance & Technologique de BPCE n'étant que très peu en contacte avec le client et sachant qu'il est un service interne, il n'y a finalement que peu d'informations concrètes concernant leurs réalisations. Nous vous avons détaillés ici, les plus importants. </p>
+  </div>
+  <div class="ctn">
+    <img src="image/imgpage3.png">
+  </div>
+
+  <footer class="bg-dark text-center text-white" id="footer">
+    <div class="container">
+      <section>
+        <div class="text-center p-3 bg-dark">
+          <p style="margin-top:16px">© 2022 Dynos'Analyse <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=242269.html" style="text-decoration: none; color:white">(Théo GOUSSOT, Yonnis Peyrous, Rémi Freymond, Alexandre Garnier)</a>         <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/tgoussot/G6_SAE1.05-06_BPCE-IT" role="button" target="_blank"><i class="fab fa-github"></i></a></p>
+        </div>
+      </section>
+  </footer>
+
+  <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>         
 </body>

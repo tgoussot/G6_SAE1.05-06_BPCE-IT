@@ -45,6 +45,27 @@
   margin: 0px
 }
 
-.image_chiffre {
-  height: 675px;
+.image_chiffre img{
+  width: 100%;
+  height: auto;
+
+}
+.image_chiffre{
+  width: 100%;
+  height: auto;
+
+}
+
+
+.row {
+  margin-right: 5%;
+  margin-left: 5%;
+  align-items: center;
+}
+
+.gauche{
+  padding: 0;
+}
+.row p {
+  max-width: 50%;
 }

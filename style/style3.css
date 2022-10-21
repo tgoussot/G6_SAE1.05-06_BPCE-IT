@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap%27');
+
+.ctn{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.ctn img{
+    width: 100%;
+}
+
+
+
+
+.title_3 h3{
+    font-family: Candara;
+    text-align: center;
+    padding-top: 65px;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+.title_3 p{
+    font-family: Alef;
+    text-align: rigleftht;
+    padding: 5%;
+    padding-bottom: 0;
+    font-size: 18px;
+}
