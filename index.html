@@ -34,13 +34,13 @@ slider, contenu, animation & design by Yonnis Peyrous -->
 
     <figure class="figure">
       <video loop muted autoplay preload="auto" id="upnavbar" >
-        <source type="video/mp4" src="video/video-top-navbar-V2.mp4" onload="window.scrollY=1000" id="video01">
+        <source type="video/mp4" src="video/video-top-navbar-V2.mp4" onload="window.scrollY=1000" >
       </video>
     </figure>
   </div>
   
                 <!-- NAVBAR -->
-  <nav class="navbar sticky-top navbar-expand-lg" ">
+  <nav class="navbar sticky-top navbar-expand-lg">
     <a class="navbar-brand" href="https://github.com/tgoussot/G6_SAE1.05-06_BPCE-IT" target="_blank">Dynos'Analyse</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@ slider, contenu, animation & design by Yonnis Peyrous -->
 <!-- <div class="background"> -->
   <!-- slider 01 -->
   <div class="header" id="anim1"> 
-    <img src="video/blanc01giffinal.gif" id="video02">
+    <img src="video/blanc01giffinal.gif" alt="img separation 1" id="video01">
   </div>
 
   <div class="bandeau_slider container-fluid" id="slider">
@@ -78,7 +78,7 @@ slider, contenu, animation & design by Yonnis Peyrous -->
         <img src="image/slider1.jpg" class="img_slider active" alt= "arbre avec un coucher soleil" >
         <img src="image/slider2.jpg" class="img_slider" alt= "personne tenant un nuage un peu informatique">
         <div class="texte_slider" id="s2ts">
-          <h5 id="text1" class="droit"><p class="titre">Qui sont-ils?</p> Avec plus de <strong>100 000 colaborateurs</strong> et <strong>36 million de clients</strong> dans le monde, le groupe BPCE est l'un des acteurs banquaires les plus important de France. Il represente plus de <strong>20% du financement de l'économie française</strong>...</h5>
+          <h5 id="text1" class="droit"><span class="titre">Qui sont-ils? <br></span> Avec plus de <strong>100 000 colaborateurs</strong> et <strong>36 million de clients</strong> dans le monde, le groupe BPCE est l'un des acteurs banquaires les plus important de France. Il represente plus de <strong>20% du financement de l'économie française</strong>...</h5>
           <a href="page1.html" id="abutton" target="_blank">
             <i class="fa-solid fa-circle-chevron-right fa-2xl" id="buttonslide" ></i>
           </a>
@@ -89,7 +89,7 @@ slider, contenu, animation & design by Yonnis Peyrous -->
 
   <!-- slider 02 -->
   <div class="header" id="anim2"> 
-    <img src="video/blanc02giffinal.gif" id="video02">
+    <img src="video/blanc02giffinal.gif" alt="image separation 2" id="video02">
   </div>
   <div class="bandeau_slider container-fluid" id="slider02">
           
@@ -100,7 +100,7 @@ slider, contenu, animation & design by Yonnis Peyrous -->
         <img src="image/slider4.jpg" class="img_slider02" alt= "personne tenant un nuage un peu informatique">
         <div class="texte_slider inverse2" id="inverse2">
 
-          <h5 id="h5s2"><p class="titre">BPCE-IT</p> Des quantités titanesques de donnée, une réponse aux menaces a toutes épreuves, la confection d'outil sur mesure... <br>Quels sont les <strong>enjeux</strong> de la branche <strong>Infogérance & Technologique ?</strong></h5>
+          <h5 id="h5s2"><span class="titre">BPCE-IT<br></span> Des quantités titanesques de donnée, une réponse aux menaces a toutes épreuves, la confection d'outil sur mesure... <br>Quels sont les <strong>enjeux</strong> de la branche <strong>Infogérance & Technologique ?</strong></h5>
           <a href="page2.html" id="abutton02" target="_blank">
             <i class="fa-solid fa-circle-chevron-left fa-2xl" id="buttonslide02" ></i>
           </a>
@@ -111,7 +111,7 @@ slider, contenu, animation & design by Yonnis Peyrous -->
   <!-- slider 03 -->
 
   <div class="header" id="anim3"> 
-    <img src="video/blanc03giffinal.gif" id="video02">
+    <img src="video/blanc03giffinal.gif" alt="image separation 2" id="video03">
   </div>
 
   <div class="bandeau_slider container-fluid" id="slider03">
@@ -122,7 +122,7 @@ slider, contenu, animation & design by Yonnis Peyrous -->
         <img src="image/slider5.jpeg" class="img_slider03 active03" alt= "arbre avec un coucher soleil" >
         <img src="image/slider6.jpg" class="img_slider03" alt= "personne tenant un nuage un peu informatique">
         <div class="texte_slider">
-          <h5 id = "text3" class="droit"><p class="titre">Les Projets</p>Pour répondre a une demande toujours plus exigeante, le <b>développement d'outils</b> techniques et utilisateur devient toujours plus complexe. <br>C'est pourquoi la branche IT est chargé de mener à bien de <b>nombreux projet</b>, voici les plus importants...</p></h5>
+          <h5 id = "text3" class="droit"><span class="titre">Les Projets<br></span>Pour répondre a une demande toujours plus exigeante, le <b>développement d'outils</b> techniques et utilisateur devient toujours plus complexe. <br>C'est pourquoi la branche IT est chargé de mener à bien de <b>nombreux projet</b>, voici les plus importants...</h5>
           <a href="page3.html" id="abutton03" target="_blank">
             <i class="fa-solid fa-circle-chevron-right fa-2xl" id="buttonslide03" ></i>
           </a>
@@ -135,11 +135,12 @@ slider, contenu, animation & design by Yonnis Peyrous -->
 
 <footer class="bg-dark text-center text-white" id="footer">
   <div class="container">
-    <section>
+    <div>
       <div class="text-center p-3 bg-dark">
         <p style="margin-top:16px">© 2022 Dynos'Analyse <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=242269.html" style="text-decoration: none; color:white">(Théo GOUSSOT, Yonnis Peyrous, Rémi Freymond, Alexandre Garnier)</a>         <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/tgoussot/G6_SAE1.05-06_BPCE-IT" role="button" target="_blank"><i class="fab fa-github"></i></a></p>
       </div>
-    </section>
+    </div>
+  </div>
 </footer>
 <script src="js/index.js"></script>
 <script>
