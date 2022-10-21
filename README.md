@@ -4,6 +4,7 @@
 ## Table des matières 
 * [Présentation Général](#presentation)
 * [Zooning & Prototype de la page](#zooning)
+* [Certification W3C](#W3C)
 * [Avancement du projet](#avancement)
 * [Lancer le projet](#lancer) 
 * [Répartition des tâches](#tache)
@@ -37,6 +38,11 @@ Le site que nous développons à pour objectif de présenter l'entreprise BPCE-I
 - Page d'accueil 
 
 ![](/zoning_prototype/prototype.png)
+
+<div id='W3C'>
+## Certification W3C 
+
+Veuilliez cliquez<a href = "CertificationW3C_A2-groupe6-1.pdf" target=_blank> ici </a> pour voir la certfication W3C de chacun de nos pages
 
 <div id='avancement'/>
 
