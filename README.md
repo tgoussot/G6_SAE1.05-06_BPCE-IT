@@ -54,9 +54,12 @@ Rendez vous sur ce lien : https://tgoussot.github.io/G6_SAE1.05-06_BPCE-IT/index
 <div id ='tache'>
 ## Répartition des tâches
 
-Rémi FREYMONT auteur de la page "Qui sont-ils ?", auteur de la partie "Le fonctionnement de l'entreprise" dans le rapport économique. <br>
-Alexandre GARNIER auteur de la page "Quels enjeux ?", auteur de la partie "L'organisation de l'entreprise" dans le rapport économique. <br>
-Yonnis PEYROUS co-auteur de la page d'accueil et de la page "Projets Majeurs", auteur de la page "Histoire de l'entreprise et impact environnemental" du rapport économique et réalisateur des animations sur le site. <br>
+Rémi FREYMONT auteur de la page "Qui sont-ils ?", auteur de la partie "Le fonctionnement de l'entreprise" dans le rapport économique. 
+  
+Alexandre GARNIER auteur de la page "Quels enjeux ?", auteur de la partie "L'organisation de l'entreprise" dans le rapport économique, réalisation des 2 questionnaires clients qui ont permis de connaître les besoins de notre client. 
+  
+Yonnis PEYROUS co-auteur de la page d'accueil et de la page "Projets Majeurs", auteur de la page "Histoire de l'entreprise et impact environnemental" du rapport économique et réalisateur des animations sur le site.
+  
 Théo GOUSSOT co-auteur de la page d'accueil et de la page "Projets Majeurs", auteur de la page "Information comptable et financière" dans le rapport économique et mise en relation avec Thierry HUSY responsable de service chez BPCE-IT. 
 
 <div id='credit'/>
