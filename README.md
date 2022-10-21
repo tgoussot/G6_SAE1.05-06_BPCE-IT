@@ -6,6 +6,7 @@
 * [Zooning & Prototype de la page](#zooning)
 * [Avancement du projet](#avancement)
 * [Lancer le projet](#lancer) 
+* [Répartition des tâches](#tache)
 * [Crédit](#credit)
 *******
 
@@ -41,11 +42,22 @@ Le site que nous développons à pour objectif de présenter l'entreprise BPCE-I
 
 ## Avancement du projet
 - 07/10/2022 : La page d'accueil est finalisé, totalement responsive
+- 12/10/2022 : La page "Qui sont-ils ?" est finalisé, totalement responsive
+- 14/10/2022 : La page "Quels enjeux ?"  est finalisé, totalement responsive 
+- 15/10/2022 : La page "Projet Majeurs ?" finalisé, totalement responsive 
 
 <div id='lancer'/> 
 
 ## Lancer le projet
 Rendez vous sur ce lien : https://tgoussot.github.io/G6_SAE1.05-06_BPCE-IT/index.html
+
+<div id ='tache'>
+## Répartition des tâches
+
+Rémi FREYMONT auteur de la page "Qui sont-ils ?", auteur de la partie "Le fonctionnement de l'entreprise" dans le rapport économique. <br>
+Alexandre GARNIER auteur de la page "Quels enjeux ?", auteur de la partie "L'organisation de l'entreprise" dans le rapport économique. <br>
+Yonnis PEYROUS co-auteur de la page d'accueil et de la page "Projets Majeurs", auteur de la page "Histoire de l'entreprise et impact environnemental" du rapport économique et réalisateur des animations sur le site. <br>
+Théo GOUSSOT co-auteur de la page d'accueil et de la page "Projets Majeurs", auteur de la page "Information comptable et financière" dans le rapport économique et mise en relation avec Thierry HUSY responsable de service chez BPCE-IT. 
 
 <div id='credit'/>
 
