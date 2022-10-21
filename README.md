@@ -52,8 +52,8 @@ Le site que nous développons à pour objectif de présenter l'entreprise BPCE-I
 Rendez vous sur ce lien : https://tgoussot.github.io/G6_SAE1.05-06_BPCE-IT/index.html
 
 <div id ='tache'>
+  
 ## Répartition des tâches
-
 Rémi FREYMONT auteur de la page "Qui sont-ils ?", auteur de la partie "Le fonctionnement de l'entreprise" dans le rapport économique. 
   
 Alexandre GARNIER auteur de la page "Quels enjeux ?", auteur de la partie "L'organisation de l'entreprise" dans le rapport économique, réalisation des 2 questionnaires clients qui ont permis de connaître les besoins de notre client. 
