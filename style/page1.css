@@ -69,3 +69,13 @@
 .row p {
   max-width: 50%;
 }
+
+.txt_img_1{
+  max-width: 500px;
+}
+
+.force{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
